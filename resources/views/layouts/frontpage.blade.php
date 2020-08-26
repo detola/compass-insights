@@ -33,48 +33,7 @@
  
     @include('layouts.partials.navbar')
      
-      <!-- {{--<div class="container">
-          <div class="row">
-              <div class="row content-heading">
-                  <div class="col-md-3"><h4>Category</h4></div>
-                  <div class="col-md-9">
-                      <div class="row">
-                          <div class="col-md-4"><h4 class="main-content-heading">@yield('heading')</h4></div>
-                        <div class="col-md offset-6 col-md-2">
-                            <a href="{{route('thread.create')}}" class="btn btn-primary">Create Thread</a>
-                        </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-3">
-                  <div class="content-wrap well">
-                    <div class="list-group">
-                        <a href={{ route('thread.index') }} class="list-group-item list-group-item-action">
-                            Cras justo odio
-                            <span class="badge">12</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">               
-                            Dapibus ac facilisis in
-                            <span class="badge">12</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            Morbi leo risus                   
-                            <span class="badge">12</span>
-                        </a>
-                    </div>
-                </div>   
-            </div>
-          
-            <div class="col-md-9">
-                <div class="content-wrap well">
-                @yield('content')
-                </div>
-            </div>          
-        </div>
-      </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
-</html>--}} -->
+      
 
 @yield('content')
 <!-- Footer Section Start -->

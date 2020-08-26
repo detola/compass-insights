@@ -2,11 +2,11 @@
 
 @section('content')
 <!--Hero Section-->
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">Information About Company</h1>
+                <h1 class="text-white text-center down-line-white">FAQ</h1>
                 <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">People freequenly ask question and get answer from our cool stuff. User can feel free to ask question and we answer asap.</span>
             </div>
         </div>
@@ -17,7 +17,7 @@
 <div class="full-row">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            {{-- <div class="col-lg-4">
                 <div class="fag-category list-color-general list-text-hover-primary py-5 px-4 bg-gray mb-5">
                     <ul>
                         <li><a href="#">Basic</a></li>
@@ -30,8 +30,8 @@
                         <li><a href="#">Color Settings</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-lg-8">
+            </div> --}}
+            <div class="col-lg-12">
                 <div class="simple-collaps bg-gray px-4 py-3 border mb-3">
                     <span class="accordion text-secondary d-block">I see feedback is integral to Compass’ offerings. Why is feedback so important
                         and what does it entail?</span>

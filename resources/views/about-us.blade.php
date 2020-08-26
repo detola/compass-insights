@@ -2,11 +2,11 @@
 
 @section('content')
     <!--Hero Section-->
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">Information About Company</h1>
+                <h1 class="text-white text-center down-line-white">About Us</h1>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
 					ambiguity and guesswork, guarantee quality, boost productivity, and increase employee morale.</p>
 			</div>
 			<div class="col-lg-6 col-md-12 offset-lg-1 mb-5">
-				<img src="css/assets/images/hi-30.png" alt="corporate template">
+				<img src="css/assets/images/about-us.jpg" alt="corporate template">
 			</div>
 		</div>
 	</div>
@@ -57,33 +57,103 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
 				<div class="thumb-team-classic mb-4">
-					<img src="css/assets/images/team/1.png" alt="image not found">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
 					<h5 class="mt-3"><a href="#">Adun Okupe</a></h5>
 					<span class="text-general">Senior Advisor</span>
 				</div>
 			</div>	
 			<div class="col-lg-4 col-md-6">
 				<div class="thumb-team-classic mb-4">
-					<img src="css/assets/images/team/2.png" alt="image not found">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
 					<h5 class="mt-3"><a href="#">Nkiruka Nwakonobi</a></h5>
 					<span class="text-general">Business Development Manager</span>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="thumb-team-classic mb-4">
-					<img src="css/assets/images/team/3.png" alt="image not found">
-					<h5 class="mt-3"><a href="#">Franchesca Ihuoma</a></h5>
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
+					<h5 class="mt-3"><a href="https://www.linkedin.com/in/bukola-obafunso-b44494177">Franchesca Ihuoma</a></h5>
 					<span class="text-general">Lead Analyst</span>
 				</div>
 			</div>
 		</div>
-		</div>
 		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="thumb-team-classic mb-4">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
+					<h5 class="mt-3"><a href="https://www.linkedin.com/in/bukola-obafunso-b44494177">Bukola Obafunsho</a></h5>
+					<span class="text-general">Advisory Board Member</span>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="thumb-team-classic mb-4">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
+					<h5 class="mt-3"><a href="http://linkedin.com/in/dayo-balogun-2b328b4a">Dayo Adeola</a></h5>
+					<span class="text-general">Advisory Board Member</span>
+				</div>
+			</div>	
+			<div class="col-lg-3 col-md-6">
+				<div class="thumb-team-classic mb-4">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
+					<h5 class="mt-3"><a href="https://www.linkedin.com/in/demilade-ademuson-ba631944/">Demilade Ademuson</a></h5>
+					<span class="text-general">Advisory Board Member</span>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="thumb-team-classic mb-4">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
+					<h5 class="mt-3"><a href="https://www.linkedin.com/in/dr-ponmile-osibo-7057152">Ponmile Osibo</a></h5>
+					<span class="text-general">Advisory Board Member</span>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="thumb-team-classic mb-4">
+					<img src="css/assets/images/avatar1.jpg" alt="image not found">
+					<h5 class="mt-3"><a href="https://www.linkedin.com/in/chioma-viola-opara-35113517">Chioma Viola Opara</a></h5>
+					<span class="text-general">Advisory Board Member</span>
+				</div>
+			</div>
+		</div>
+		</div>
+		{{-- <div class="row">
 			<div class="col-lg-12 py-4">
 				<a href="#" class="btn btn-primary d-table mx-auto">Explore More Members</a>
 			</div>
+		</div> --}}
+	</div>
+	<div class="full-row pt-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="tagline text-primary m-auto text-center pb-2 d-table w-xs-100">Testimonial</span>
+					<h2 class="down-line m-auto text-center w-50 w-sm-100">What Our Customers Says About Us</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="testimonial-simple text-center w-75 w-sm-100 mx-auto mt-5">
+						<div class="text-carusel owl-carousel">
+							<div class="item">
+								<i class="flaticon-text-quotes flat-medium text-primary"></i>
+								<p>From your findings and feedback, the foundation followed through with your
+									recommendations and applied it to in the new social media strategy. We are happy that
+									our online followers understand more about who we are and what we are doing. Our
+									online presence and engagement has improved .</p>
+								<span class="text-primary">Chris Ogunbanjo Foundation</span>
+							</div>
+							<div class="item">
+								<i class="flaticon-text-quotes flat-medium text-primary"></i>
+								<p>Working with Compass has been seamless. From our very first brainstorming session,
+									they helped to streamline the vision for the foundation. They are always on the ball and
+									have helped shape the foundation’s model so it can fully thrive and benefit those it set
+									out to help in the first place.</p>
+								<span class="text-primary">The Dolapo Sijuwade Foundation</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
 @endsection

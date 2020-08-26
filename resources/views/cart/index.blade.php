@@ -80,7 +80,7 @@
                     </table>
                 </form>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    {{-- <div class="col-lg-6 col-md-6">
                         <div class="cart-shipping bg-light rounded border mt-5 p-4">
                             <div class="cart_totals ">						
                                 <h2>Calcluting Shipping</h2>
@@ -107,8 +107,8 @@
                                 </div>			
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
+                    </div> --}}
+                    <div class="col-lg-12 col-md-12">
                         <div class="cart-collaterals rounded border mt-5 p-4">
                             <div class="cart_totals ">						
                                 <h2>Cart Totals</h2>

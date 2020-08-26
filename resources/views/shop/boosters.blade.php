@@ -1,8 +1,8 @@
-@extends('layouts/frontpage')
+@extends('layouts.frontpage')
 
 @section('content')
     <!--Hero Section-->
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(../css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -55,6 +55,7 @@
 							value you provide to potential customers. A positive first impression is more likely to 
 							yield to a sale. It also converts the potential customer to an ambassador even if they 
 							don’t make an initial purchase.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -81,6 +82,7 @@
 							The Order Management booster ensures that your customers have a seamless order
 							process, consistently providing reassurance to your customer and ensuring referrals as
 							well as repeat orders.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -106,6 +108,7 @@
 							The delivery experience can make or break the order success. Provide upfront
 							information about what happens to unwanted products/services. Ensure your customer
 							delivery experience is a positive one, all the time.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -133,6 +136,7 @@
 							Get the Troubleshooting for Success booster and resolve issues, respond to queries and
 							complaints and receive feedback graciously. Who knows, you might get a loyal
 							customer through this.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -160,7 +164,7 @@
 							Get the Troubleshooting for Success booster and resolve issues, respond to queries and
 							complaints and receive feedback graciously. Who knows, you might get a loyal
 							customer through this.</p>
-							<del>100,000</del>
+							<del class="text-dark text-uppercase">NGN 100,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}

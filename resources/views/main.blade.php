@@ -6,7 +6,7 @@
 	<div id="slider" style="width:1200px; height: 980px;margin:0 auto;margin-bottom: 0px;">	
 		<!-- Slide 1-->
 		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:10000; transition2d:3; timeshift:1000; deeplink:home; kenburnszoom:in; kenburnsrotate:0; kenburnsscale:1.1; parallaxevent:scroll; parallaxdurationmove:500;">
-			<img width="1920" height="1080" src="css/assets/images/slider/corporate-7.jpg" class="ls-bg" alt="" />
+			<img width="1920" height="1080" src="css/assets/images/slider/corporate10.jpg" class="ls-bg" alt="" />
 			
 			<div style="width:100%; height:100%; background:rgba(24, 27, 36, 0.6); top:50%; left:50%;" class="ls-l" data-ls="showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:1.5; scaleyin:1.5; position:fixed;"></div>
 			
@@ -22,7 +22,7 @@
 		
 		<!-- Slide 2-->
 		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:3; timeshift:-500; deeplink:home; kenburnszoom:in; kenburnsrotate:0; kenburnsscale:1.1; parallaxevent:scroll; parallaxdurationmove:500;">
-			<img width="1920" height="1050" src="css/assets/images/slider/corporate-8.jpg" class="ls-bg" alt="" />
+			<img width="1920" height="1050" src="css/assets/images/slider/corporate11.jpg" class="ls-bg" alt="" />
 			
 			<div style="width:100%; height:100%; background:rgba(24, 27, 36, 0.6); top:50%; left:50%;" class="ls-l" data-ls="showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:1.5; scaleyin:1.5; position:fixed;"></div>
 			
@@ -38,7 +38,7 @@
 </div>
 <!-- Slider Section End -->
 
-<div class="full-row bg-primary">
+{{-- <div class="full-row bg-primary">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-5 col-md-12">
@@ -93,6 +93,43 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div> --}}
+
+
+<div class="full-row bg-primary">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-5 col-md-12">
+			<div class="text-secondary mb-5">
+				<span class="text-secondary pb-3 tagline">Customer Insights</span>
+				<h2 class="text-secondary mb-4">Working with you to build a customer focused business.</h2>
+				<p>Compass Insights is committed to building stronger customer-centric organizations that are
+					sustainable through time.</p>
+				{{-- <p>There are 3 ways to get started …. explore options below</p> --}}
+				{{-- <a href="#" class="btn btn-dark mt-3">About Company</a> --}}
+			</div>
+		</div>
+		<div class="col-lg-7 col-md-12">
+			<div style="height: 600px; width:100%;">
+				<div class="compass_container">
+					<a id="square-1" class="square compass" href=" {{ url('/thread') }} "></a>
+					<a id="square-2" class="square compass" href=" {{ url('/shop/boosters') }} "></a>
+					<a id="square-3" class="square compass" href=" {{ url('/shop/launchpads') }} "></a>
+					<a id="square-4" class="square compass" href=" {{ url('/shop/business-solutions') }} "></a>
+					<span class="main-arrow"></span>
+					<!-- <div class="circTxt1">	</div> -->
+				</div>
+				<div class="compass_text_container">
+					<!--the holders for the text, reuse as desired-->
+					<a href=" {{ url('/shop/boosters') }} "><div class="circTxt" id="test"></div></a>
+					<a href="{{ url('/shop/launchpads') }}"><div class="circTxt2" id="test"></div></a>
+					<a href="{{ url('/shop/business-solutions') }}"><div class="circTxt3" id="test"></div></a>
+					<a href="{{ url('/thread') }} "><div class="circTxt4" id="test"></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 </div>
 
@@ -259,7 +296,7 @@
 		</div>
 	</div>
 </div>-->
-
+@forelse ($recents as $recent)
 <div class="full-row bg-light">
 	<div class="container">
 		<div class="row">
@@ -314,6 +351,8 @@
 		</div>
 	</div>
 </div>
+@empty
+@endforelse 
 
 <div class="full-row p-0 bg-footer">
 	<div class="container">

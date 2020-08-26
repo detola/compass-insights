@@ -17,7 +17,7 @@
 				<div class="col-md-12">
 					{{-- <nav class="navbar navbar-expand-lg nav-white nav-primary-hover nav-down-line-active py-2"> --}}
 					<nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-down-line-active py-2">
-						<a class="navbar-brand" href="{{ url('/') }}"><img class="nav-logo" src="css/assets/images/logo/logo_small.png" alt="{{ config('app.name', 'Laravel') }}" /></a>
+						<a class="navbar-brand" href="{{ url('/') }}"><img class="nav-logo" src="{{URL::to('/')}}/css/assets/images/logo/logo_small.png" alt="{{ config('app.name', 'Laravel') }}" /></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
 						</button>
@@ -30,7 +30,7 @@
 								</a>
 							  </li>
 							  <li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="{{url('products')}}">
+								<a class="nav-link dropdown-toggle" href="#">
 								Products
 								</a>
 								<ul class="dropdown-menu">

@@ -2,7 +2,7 @@
 
 @section('content')
     
-	<div class="full-row page-banner-image overlay-secondary" style="background-image: url(assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+	<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -15,7 +15,7 @@
 	
 	
 	<!-- breadcrumb -->
-	<div class="full-row bg-gray py-3">
+	{{-- <div class="full-row bg-gray py-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -29,15 +29,14 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- breadcrumb -->
-	
 	
 	
 	<div class="full-row">
 		<div class="container">
 			<div class="row">
-				@foreach ($recents as $recent)
+				@forelse ($recents as $recent)
 
 				<div class="col-lg-3 col-md-6">
 					<div class="thumb-blog-default">
@@ -57,7 +56,9 @@
 						</div>
 					</div>
 				</div>
-				@endforeach
+				@empty
+                <h5>{{'No posts'}}</h5>
+                @endforelse  
 				
 				<div class="col-lg-12 mt-3">
 					<nav aria-label="Page navigation example">

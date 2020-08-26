@@ -4,8 +4,12 @@ Theme Color All Codes Variable
 :root {
 	 --theme-general-color: #6d7175;  /* theme gray color */
 }
+/* :root {
+	 --theme-primary-color: #f5a61e;  /* theme primary color 
+} */
+
 :root {
-	 --theme-primary-color: #f5a61e;  /* theme primary color */
+	--theme-primary-color: #40D0ED;  /* theme primary color #40D0ED*/
 }
 :root {
 	 --theme-secondary-color: #2c2d2f;  /* theme secondary color */
@@ -84,6 +88,163 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
 	font-weight: 400
 }
+
+
+/* body {
+	font-size: 15px;
+	font-family: var(--theme-general-font);
+	font-weight: 400;
+	line-height: 36px;
+	background: #111;
+} */
+  .compass_text_container {
+  /*centers in the container*/
+  text-align: center;
+}
+
+div.circTxt {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: var(--theme-dark-color);
+}
+
+div.circTxt2 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: var(--theme-dark-color);
+}
+
+div.circTxt3 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: var(--theme-dark-color);
+}
+
+div.circTxt4 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: var(--theme-dark-color);
+}
+
+
+
+p.circTxt1 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: whitesmoke;
+}
+
+p.circTxt2 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: whitesmoke;
+}
+
+p.circTxt3 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: whitesmoke;
+}
+
+p.circTxt4 {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: whitesmoke;
+}
+
+
+.compass_container {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid transparent;
+
+}
+
+.compass_container .square {
+  background-color: transparent;
+  display: inline-block;
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+a.compass{
+  text-decoration: none;
+   text-align: center;
+        /* NOT IMPORTANT */
+        font-family: arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        
+}
+
+.compass_container .square:nth-child(2) {
+  background-color: transparent;
+
+}
+
+.compass_container .square:nth-child(3) {
+  background-color: transparent;
+  float: right;
+}
+
+.compass_container .square:nth-child(4) {
+  background-color: transparent;
+}
+.compass_container .square a{
+  text-decoration: none;
+   text-align: center;
+        /* NOT IMPORTANT */
+        font-family: arial, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 50px;
+        top: 100px;
+        width: 50%;
+        right: 5px;
+        position: absolute;
+}
+
+.main-arrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 20px);
+  border-bottom: 60px solid #F5A61E;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(320deg);
+-webkit-transition: transform .25s ease;
+     -moz-transition: transform .25s ease;
+      -ms-transition: transform .25s ease;
+       -o-transition: transform .25s ease;
+          transition: transform .25s ease;
+  }
 
 
 

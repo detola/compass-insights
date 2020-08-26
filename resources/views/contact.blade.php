@@ -2,7 +2,7 @@
 
 @section('content')
     <!--Hero Section-->
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -15,12 +15,12 @@
 
 
 <!--Contact us-->
-<div class="full-row" style="background-image: url(css/assets/images/background/bg-30.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+{{-- <div class="full-row" style="background-image: url(css/assets/images/background/bg-30.png); background-repeat: no-repeat; background-position: center center; background-size: cover;"> --}}
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-6">
 				<span class="tagline text-primary pb-2 d-table w-xs-100">Contact</span>
-				<h1 class="down-line mb-2">Tell us what you need so we can meet your business needs</h1>
+				<h2 class="down-line mb-2">Tell us what you need so we can meet your business needs</h2>
 				<p>Have you had exceptionally great service or poor service with any business/brand? Tell Compass. 
 					<br>Your reviews are 100% anonymous and only used to improve customer experiences for the brands you engage with.
 				</p>
@@ -75,16 +75,10 @@
 					</form>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
+			<div class="col-lg-6 col-md-6">
+				<span class="tagline text-primary pb-2 d-table w-xs-100">Message</span>
 
-<!--Send Message Section-->
-<div class="full-row">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7 col-md-7">
-				<h3 class="down-line mb-5">Send Message</h3>
+				<h2 class="down-line mb-5">Send Message</h2>
 				<div class="form-simple mb-5">
 					<form id="contact-form" action="#" method="post">
 						<div class="form-row">
@@ -109,6 +103,48 @@
 							</div>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Send Message Section-->
+<div class="full-row">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 col-md-7">
+				{{-- <h3 class="down-line mb-5">Send Message</h3>
+				<div class="form-simple mb-5">
+					<form id="contact-form" action="#" method="post">
+						<div class="form-row">
+							<div class="col-md-6">
+								<label>Full Name:</label>
+								<input type="text" class="form-control bg-gray" name="name" required="">
+							</div>
+							<div class="col-md-6">
+								<label>Your Email:</label>
+								<input type="email" class="form-control bg-gray" name="email" required="">
+							</div>
+							<div class="col-md-12">
+								<label>Subject:</label>
+								<input type="text" class="form-control bg-gray" name="subject" required="">
+							</div>
+							<div class="col-md-12">
+								<label>Message:</label>
+								<textarea class="form-control bg-gray" name="message" rows="8" required=""></textarea>
+							</div>
+							<div class="col-md-12">
+								<button class="btn btn-primary" name="submit" type="submit">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div> --}}
+
+				<div class="container-fluid">
+					<div class="row">
+						<div id="map" style="height: 500px; width: 100%; overflow: hidden;"></div>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-5 col-md-5">

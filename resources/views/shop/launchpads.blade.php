@@ -2,7 +2,7 @@
 
 @section('content')
     <!--Hero Section-->
-    <div class="full-row page-banner-image overlay-secondary" style="background-image: url(../css/assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+    <div class="full-row page-banner-image overlay-secondary" style="background-image: url(../css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

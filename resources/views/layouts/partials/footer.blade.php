@@ -4,20 +4,21 @@
 			<div class="col-lg-3 col-md-6">
 				<div class="footer-widget mb-5">
 					<div class="footer-logo mb-4">
-						<a href="{{ url('/') }}"><img src="css/assets/images/logo/logo_small.png" alt="{{ config('app.name', 'Laravel') }}" /></a>
+						<a href="{{ url('/') }}"><img src="{{URL::to('/')}}/css/assets/images/logo/logo_small.png" alt="{{ config('app.name', 'Laravel') }}" /></a>
 					</div>
 					<p>We are a customer engagement and insights company. We work with organizations of all sizes to strengthen and grow their customer base by building stronger relationship with their customers and other users.</p>
-					<a href="{{ url('/contact', []) }}" class="btn btn-primary mt-4">Contact Now</a>
+					<a href="{{ url('/contact') }}" class="btn btn-primary mt-4">Contact Now</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="footer-widget post-widget mb-5">
 				  <h3 class="widget-title mb-4">Recent Posts</h3>
-				  <ul>
+				  No posts yet.
+				  {{-- <ul>
 					<li><a href="#">How Our Consultation Can Change and Increase Your Business</a><span>10 May, 2019</span></li>
 					<li><a href="#">The Best Way of Money Investment and Process to Get Success</a><span>08 May, 2019</span></li>
 					<li><a href="#">Do You Know We Take The Risk of Your Business</a><span>30 April, 2019</span></li>
-				  </ul>
+				  </ul> --}}
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -90,7 +91,21 @@
 <script src="{{asset('css/assets/js/owl.js')}}"></script>
 <script src="{{asset('css/assets/js/wow.js')}}"></script>
 <script src="{{asset('css/assets/js/mixitup.min.js')}}"></script>
-<script src="{{asset('css/assets/js/custom.js')}}"></script>
+<script src="{{asset('css/assets/js/custom.js')}}"></script> 
+
+<!-- Scripts -->
+<script src="{{ asset('js/new.js') }}"></script>
+
+<!-- use for map style --> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script>
+<script src="css/assets/js/map.scripts.js"></script>
+<script>
+(function($){	
+	var _latitude = 6.484507 //36.596165;
+	var _longitude = 3.356351 //-97.062988;
+	init(_latitude, _longitude);
+})(jQuery);
+</script>
 
 <script>
 
