@@ -55,9 +55,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/thread', 'ThreadController');
 Route::resource('comment', 'ThreadCommentController', ['only' => ['update', 'destroy']]);
-Route::post('comment/create/{thread}', 'ThreadCommentController@addThreadComment')->name('threadcomment.store');
+Route::post('comment/create', 'ThreadCommentController@addThreadComment')->name('threadcomment.store');
 Route::get('/product', 'ProductController@products')->name('products');
 
 Route::get('/cart', 'CartController@index')->name('cart.index');
@@ -93,6 +92,23 @@ Route::get('admin/posts/{id}/edit', 'PostController@edit')->name('admin.posts.ed
 Route::patch('admin/posts/{id}/edit', 'PostController@update')->name('admin.posts.update');
 Route::delete('/admin/posts/{id}', 'PostController@destroy')->name('admin.posts.update');
 
+//Admin Threads
+Route::get('admin/threads', 'ThreadController@index')->name('admin.threads.index');
+Route::get('admin/threads/create', 'ThreadController@create')->name('admin.threads.create');
+Route::post('admin/threads/create', 'ThreadController@store')->name('admin.threads.store');
+Route::get('admin/threads/{id}/edit', 'ThreadController@edit')->name('admin.threads.edit');
+Route::patch('admin/threads/{id}/edit', 'ThreadController@update')->name('admin.threads.update');
+Route::delete('/admin/threads/{id}', 'ThreadController@destroy')->name('admin.threads.update');
+
+Route::get('/thread', 'ThreadController@threads')->name('thread.index');
+Route::get('thread/create', 'ThreadController@createThread')->name('thread.create');
+Route::post('thread/create', 'ThreadController@storeThread')->name('thread.store');
+Route::get('thread/{id}/edit', 'ThreadController@editThread')->name('thread.edit');
+Route::patch('thread/{id}/edit', 'ThreadController@updateThread')->name('thread.update');
+Route::get('thread/{id}/show', 'ThreadController@show')->name('thread.show');
+
+//Route::resource('/thread', 'ThreadController');
+
 //Product Category Routes
 // Route::get('admin/productcategory', 'ProductCategoryController@index')->name('admin.productcategory.index');
 // Route::get('admin/productcategory', 'ProductCategoryController@create')->name('admin.productcategory.create');
@@ -114,9 +130,9 @@ Route::get('/products', 'ProductController@products')->name('products.index');
 Route::get('/product', 'ProductController@products')->name('products.show');
 
 Route::get('/shop', 'ShopController@index')->name('shop.index');
-Route::get('/shop/boosters', 'ShopController@businessboosters')->name('shop.boosters');
-Route::get('/shop/launchpads', 'ShopController@businesslaunchpads')->name('shop.launchpads');
-Route::get('/shop/business-solutions', 'ShopController@businesssolutions')->name('shop.business-solutions');
+Route::get('/shop#boosters', 'ShopController@businessboosters')->name('shop.boosters');
+Route::get('/shop#launchpads', 'ShopController@businesslaunchpads')->name('shop.launchpads');
+Route::get('/shop#business-solutions', 'ShopController@businesssolutions')->name('shop.business-solutions');
 //Route::get('/shop/{id}', 'ShopController@show')->name('shop.show');
 
 

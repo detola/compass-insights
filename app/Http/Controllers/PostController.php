@@ -100,14 +100,6 @@ class PostController extends Controller
         return redirect()->route('admin.posts.index')->withMessage('Post has been created.');
     }
 
-
-public function show(Post $post)
-    {
-        //
-        //return view('post.single',compact('thread'));
-    }
-
-
     /**
      * Show the form for editing the specified resource.
      *

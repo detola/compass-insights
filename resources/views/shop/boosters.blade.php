@@ -6,15 +6,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">Product Page</h1>
-                <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Product Page, feel free to choose from the variety of product that's we've itemised for you</span>
+                <h1 class="text-white text-center down-line-white">Our Products</h1>
+                {{-- <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Product Page, feel free to choose from the variety of product that's we've itemised for you</span> --}}
             </div>
         </div>
     </div>
 </div>
 
 
-<div class="full-row">
+<div class="full-row" id="boosters">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mb-5">
@@ -46,8 +46,8 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 1</span>
-						<h5 class="text-dark mb-3 text-uppercase">First Impression Matters : Make a great first impression 
-							and increase conversion rates</h5>
+						<h5 class="text-dark mb-3 text-uppercase">First Impression Matters: <i>Make a great first impression 
+							and increase conversion rates</i></h5>
 						<p>No better time to make a good impression than the first encounter with your business –
 							from WhatsApp to calls, social media to emails, we ensure that a potential client’s first
 							interaction with you is unforgettable for the right reasons. 
@@ -64,7 +64,7 @@
 									<input type="hidden" name="details" value="First Impression Matters : 
 									Make a great first impression and increase conversion rates">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -72,8 +72,8 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 2</span>
-						<h5 class="text-dark mb-3 text-uppercase">Order Management: Set a gold standard for your business, be known for your seamless
-							order processes</h5>
+						<h5 class="text-dark mb-3 text-uppercase">Order Management: <i>Set a gold standard for your business, be known for your seamless
+							order processes</i></h5>
 						<p>You have made a good first impression, and secured a sale - great! But how seamless is
 							your order process, from when the order is received to fulfilment?
 							Set a gold standard for your business and have a no-hiccup, no-excuses order
@@ -91,7 +91,7 @@
 									<input type="hidden" name="details" value="Order Management: Set a gold 
 									standard for your business, be known for your seamless order processes">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -99,7 +99,7 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 3</span>
-						<h5 class="text-dark mb-3 text-uppercase">The Delivery Experience Revamp: Be outstanding</h5>
+						<h5 class="text-dark mb-3 text-uppercase">The Delivery Experience Revamp: <i>Be outstanding</i></h5>
 						<p>This booster is a must-have for all product vendors, and can be used by service vendors
 							too. This is when the customer gets to experience what they ordered. From first
 							impressions through the order process, this is where your promises are either made or
@@ -116,7 +116,7 @@
 									<input type="hidden" name="name" value="Booster 3">
 									<input type="hidden" name="details" value="The Delivery Experience Revamp: Be outstanding">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -124,8 +124,8 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 4</span>
-						<h5 class="text-dark mb-3 text-uppercase">Troubleshooting for Success: Be prepared to address queries, 
-							complaints and feedback</h5>
+						<h5 class="text-dark mb-3 text-uppercase">Troubleshooting for Success: <i>Be prepared to address queries, 
+							complaints and feedback</i></h5>
 						<p>No matter how hard you try, complaints are going to come. Yet, excellent businesses
 							know that complaints are the elements needed for service improvement. So, how
 							equipped are you to address complaints and feedback?
@@ -145,25 +145,16 @@
 									<input type="hidden" name="details" value="Troubleshooting for Success: 
 									Be prepared to address queries, complaints and feedback">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
-				<div class="feature-thumb-border hover-text-white bg-light transation w-50 w-sm-100 d-flex float-left p-4">
+				{{-- <div class="feature-thumb-border hover-text-white bg-light transation w-50 w-sm-100 d-flex float-left p-4">
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
-						<span class="text-primary d-table tagline">Booster Pack</span>
-						<h5 class="text-dark mb-3 text-uppercase">Get All 4 Bossters</h5>
-						<p>No matter how hard you try, complaints are going to come. Yet, excellent businesses
-							know that complaints are the elements needed for service improvement. So, how
-							equipped are you to address complaints and feedback?
-							This booster ensures that you have an established system to address complaints,
-							feedback or customer queries knowledgeably, professionally and without making the
-							other party feel uncomfortable. Better to hear these complaints first hand than to see
-							your business trending for a negative reason!
-							Get the Troubleshooting for Success booster and resolve issues, respond to queries and
-							complaints and receive feedback graciously. Who knows, you might get a loyal
-							customer through this.</p>
+						<span class="text-primary d-table tagline">Booster Bundle</span>
+						<h5 class="text-dark mb-3 text-uppercase">Get All 4 Boosters</h5>
+						<p>For a complete experience, get all boosters as a bundle and make significant savings</p>
 							<del class="text-dark text-uppercase">NGN 100,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
@@ -172,7 +163,26 @@
 									<input type="hidden" name="name" value="Booster Pack">
 									<input type="hidden" name="details" value="Get All 4 Bossters">
 									<input type="hidden" name="price" value="50000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 50,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N50,000 launch price</button>
+								</form>
+					</div>
+				</div> --}}
+
+				<div class="feature-thumb-border hover-text-white bg-primary transation w-50 w-sm-100 d-flex float-left p-4">
+					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-dark"></i></span>
+					<div class="pl-3">
+						<span class="text-dark d-table tagline">Booster Bundle</span>
+						<h5 class="text-white mb-3 text-uppercase">Get All 4 Boosters</h5>
+						<p class="text-white">For a complete experience, get all boosters as a bundle and make significant savings</p>
+							<del class="text-dark text-uppercase">NGN 100,000</del>
+							
+								<form action="{{route('cart.store')}}" method="post">
+									{{ csrf_field() }}
+									<input type="hidden" name="id" value="5">
+									<input type="hidden" name="name" value="Booster Bundle">
+									<input type="hidden" name="details" value="Get All 4 Boosters">
+									<input type="hidden" name="price" value="50000">
+									<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N50,000 launch price</button>
 								</form>
 					</div>
 				</div>

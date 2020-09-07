@@ -4,8 +4,9 @@ Theme Color All Codes Variable
 :root {
 	 --theme-general-color: #6d7175;  /* theme gray color */
 }
+
 :root {
-	 --theme-primary-color: #0e96f6;  /* theme primary color */
+	--theme-primary-color: #0e96f6;  /* theme primary color */
 }
 :root {
 	 --theme-secondary-color: #202430;  /* theme secondary color */

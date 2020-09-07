@@ -6,7 +6,7 @@
 		<div class="container">			
 			<div class="row">
 				<div class="col-lg-12 col-md-2 py-2">
-				<p class="text-white">Malesuada euismod eu metus gravida egestas, sociis torquent euismod nulla.</p>
+				<h6 class="text-tertiary mb-2" style="text-align: center;">Find out how Compass Insights is #KeepingTheLightsOn for businesses during COVID-19.</h6>
 				</div>
 			</div>
 		</div>
@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					{{-- <nav class="navbar navbar-expand-lg nav-white nav-primary-hover nav-down-line-active py-2"> --}}
-					<nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-down-line-active py-2">
+					<nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover py-2"><!--nav-down-line-active-->
 						<a class="navbar-brand" href="{{ url('/') }}"><img class="nav-logo" src="{{URL::to('/')}}/css/assets/images/logo/logo_small.png" alt="{{ config('app.name', 'Laravel') }}" /></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
@@ -30,15 +30,26 @@
 								</a>
 							  </li>
 							  <li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#">
+								<a class="nav-link dropdown-toggle" href=" {{ url('/shop') }} ">
 								Products
 								</a>
 								<ul class="dropdown-menu">
 									
-								  <li><a class="dropdown-item" href="{{url('/shop/boosters')}}">Customer Business Boosters</a></li>
-								  <li><a class="dropdown-item" href="{{url('/shop/launchpads')}}">Customer Business Launchpads</a></li>
-								  <li><a class="dropdown-item" href="{{url('/shop/business-solutions')}}">Customer Business Solution</a></li>
+								  <li><a class="dropdown-item" href="{{url('/shop#boosters')}}">Compass Business Boosters</a></li>
+								  <li><a class="dropdown-item" href="{{url('/shop#launchpads')}}">Compass Business Launchpads</a></li>
+								  <li><a class="dropdown-item" href="{{url('/shop#business-solutions')}}">Compass Business Solutions</a></li>
 								</ul>
+							  </li>
+							  <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="{{url('about-us')}}">
+								About Us
+								</a>
+								<ul class="dropdown-menu">
+									
+									<li><a class="dropdown-item" href="{{url('about-us#who-we-are')}}">Who we are</a></li>
+									<li><a class="dropdown-item" href="{{url('about-us#our-team')}}">Our Team</a></li>
+									<li><a class="dropdown-item" href="{{url('about-us#testimonials')}}">Testimonials</a></li>
+								  </ul>
 							  </li>
 							  <li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="{{url('blog')}}">
@@ -51,11 +62,6 @@
 								</a>
 							  </li>
 							  <li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="{{url('about-us')}}">
-								  Our People
-								</a>
-							  </li>
-							  <li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="{{url('faq')}}">
 								FAQs
 								</a>
@@ -64,6 +70,11 @@
 								<a class="nav-link dropdown-toggle" href="{{url('contact')}}">
 								Contact Us
 								</a>
+								<ul class="dropdown-menu">
+									
+									<li><a class="dropdown-item" href="{{url('about-us#tell-compass')}}">Tell Compass</a></li>
+									<li><a class="dropdown-item" href="{{url('about-us#get-in-touch')}}">Get in touch</a></li>
+								  </ul>
 							  </li>
 							</ul>
 							<ul class="navbar-nav ml-auto">

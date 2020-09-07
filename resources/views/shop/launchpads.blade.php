@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb-5">
-                    <h2 class="main-title down-line w-50 m-auto text-center w-sm-100">Compass Business Launchpads</h2>
+                    <h2 class="main-title down-line-tertiary w-50 m-auto text-center w-sm-100">Compass Business Launchpads</h2>
                 </div>
             </div>
             <div class="row">
@@ -46,25 +46,11 @@
 
 <!-- Case Study Section Start -->
 
-<div class="full-row bg-primary py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-md-12">
-                <h4 class="text-white mb-2">A Free Consultation and Business Tips 24/7</h4>
-                <p class="text-white">If you interested in out theme don't wait to purchase or call us</p>
-            </div>
-            <div class="col-lg-5 col-md-12">
-                <div class="y-center position-relative d-table ml-auto sm-margin-none text-white"><a href="#" class="btn btn-secondary">Get Customer Support</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-					<span class="text-primary pb-2 d-table">Compass Launchpads</span>
+					<span class="text-tertiary pb-2 d-table">Compass Launchpads</span>
                     <h3 class="mb-4">The Starter Launchpad.</h3>
                     <p>Get the Compass business review, understand your customers perspectives better and get
                         detailed insights on how to improve and grow your business. 
@@ -84,7 +70,7 @@
                                 <input type="hidden" name="name" value="The Starter Launchpad.">
                                 <input type="hidden" name="details" value="The Starter Launchpad.">
                                 <input type="hidden" name="price" value="35000">
-                                <button type="submit" class="btn btn-primary mt-4 d-table">Get all of these for NGN35,000 only</button>
+                                <button type="submit" class="btn btn-tertiary mt-4 d-table">Get this for NGN35,000 only</button>
                             </form>
                         {{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN35,000 only</a> --}}
 			</div>
@@ -96,7 +82,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-					<span class="text-primary pb-2 d-table">Compass Launchpads</span>
+					<span class="text-tertiary pb-2 d-table">Compass Launchpads</span>
                     <h3 class="mb-4">The Essentials Launchpad.</h3>
                     <p>The next level of our offerings, The Compass Essentials Launchpad sets you up on the
                         essentials of customer engagement.
@@ -111,15 +97,15 @@
                             <li><i class="fas fa-check pr-1"></i>Strategic insights on key areas in your business</li>
                             <li><i class="fas fa-check pr-1"></i>Implementation plan to develop key areas of your customer engagement system</li>
                         </ul>
-                        <p >Essentials focuses on your internal system so that with the right internal structures, you can
-                            improve your customer retention rate and increase your profits.</p>
+                        <p >The essentials launchpad focuses on the internal system of your business, you can
+                            improve your customer retention rate and increase your profit.</p>
                         <form action="{{route('cart.store')}}" method="post">
                             {{ csrf_field() }}
                             <input type="hidden" name="id" value="7">
                             <input type="hidden" name="name" value="The Essentials Launchpad.">
                             <input type="hidden" name="details" value="The Essentials Launchpad.">
                             <input type="hidden" name="price" value="75000">
-                            <button type="submit" class="btn btn-primary mt-4 d-table">Get all of these for NGN75,000 only</button>
+                            <button type="submit" class="btn btn-tertiary mt-4 d-table">Get this for NGN75,000 only</button>
                         </form>
                         {{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN75,000 only</a> --}}
 			</div>
@@ -131,7 +117,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-					<span class="text-primary pb-2 d-table">Compass Launchpads</span>
+					<span class="text-tertiary pb-2 d-table">Compass Launchpads</span>
                     <h3 class="mb-4">The Premium Launchpad.</h3>
                     <p>Get the premium experience with the Compass Premium Launchpad.
                         
@@ -157,7 +143,7 @@
                             <input type="hidden" name="name" value="The Premium Launchpad.">
                             <input type="hidden" name="details" value="The Premium Launchpad.">
                             <input type="hidden" name="price" value="250000">
-                            <button type="submit" class="btn btn-primary mt-4 d-table">Get all of these for NGN250,000 only</button>
+                            <button type="submit" class="btn btn-tertiary mt-4 d-table">Get this for NGN250,000 only</button>
                         </form>
                         {{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN250,000 only</a> --}}
 			</div>

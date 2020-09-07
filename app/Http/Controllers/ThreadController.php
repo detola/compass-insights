@@ -12,7 +12,7 @@ class ThreadController extends Controller
 {
     function __construct()
     {
-        return $this->middleware('auth')->except('index');
+        return $this->middleware('auth')->except('index','threads','show');
     }
     /**
      * Display a listing of the resource.
@@ -23,7 +23,7 @@ class ThreadController extends Controller
     {
         //
         $threads = Thread::paginate(15);
-        return view('thread.index', compact('threads'));
+        return view('admin.threads.index', compact('threads'));
     }
 
     /**
@@ -34,7 +34,7 @@ class ThreadController extends Controller
     public function create()
     {
         //
-        return view('thread.create');
+        return view('admin.threads.create');
     }
 
     /**
@@ -55,7 +55,7 @@ class ThreadController extends Controller
         auth()->user()->thread()->create($request->all());
         //Thread::create($request->all());
 
-        return redirect('thread/')->withMessage('Thread has been created');
+        return redirect('admin/threads/')->withMessage('Thread has been created');
     }
 
     /**
@@ -64,9 +64,10 @@ class ThreadController extends Controller
      * @param  \App\Thread  $thread
      * @return \Illuminate\Http\Response
      */
-    public function show(Thread $thread)
+    public function show($id)
     {
         //
+        $thread = Thread::findOrFail($id);
         return view('thread.single',compact('thread'));
     }
 
@@ -79,7 +80,7 @@ class ThreadController extends Controller
     public function edit(Thread $thread)
     {
         //
-        return view('thread.edit', compact('thread'));
+        return view('admin.threads.edit', compact('thread'));
     }
 
     /**
@@ -104,7 +105,8 @@ class ThreadController extends Controller
 
         $thread->update($request->all());
 
-        return redirect()->route('thread.show',$thread->id)->withMessage('Thread has been updated');
+        // return redirect()->route('thread.show',$thread->id)->withMessage('Thread has been updated');
+        return redirect()->route('admin.threads.edit',$thread->id)->withMessage('Thread has been updated');
     }
 
     /**
@@ -121,6 +123,38 @@ class ThreadController extends Controller
         }
         $thread->delete();
 
-        return redirect()->route('thread.index')->withMessage('Thread has been deleted');
+        return redirect()->route('admin.threads.index')->withMessage('Thread has been deleted');
+    }
+
+    public function threads()
+    {
+        //
+        $threads = Thread::paginate(15);
+        return view('thread.index', compact('threads'));
+    }
+
+    public function editThread($id)
+    {
+        //
+        $thread = Thread::findOrFail($id);
+        return view('thread.edit', compact('thread'));
+    }
+
+    public function updateThread(Request $request, Thread $thread)
+    {
+        //
+        $this->validate($request,[
+            'subject'=>'required|min:20',
+            'type'=>'required',
+            'thread'=>'required|min:20'
+        ]);
+
+        if (auth()->user() !== $thread->user_id) {
+            abort(401,'Unauthorized user');
+        }
+
+        $thread->update($request->all());
+
+        return redirect()->route('thread.show',$thread->id)->withMessage('Thread has been updated');
     }
 }

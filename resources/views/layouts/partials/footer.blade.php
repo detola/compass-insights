@@ -7,7 +7,7 @@
 						<a href="{{ url('/') }}"><img src="{{URL::to('/')}}/css/assets/images/logo/logo_small.png" alt="{{ config('app.name', 'Laravel') }}" /></a>
 					</div>
 					<p>We are a customer engagement and insights company. We work with organizations of all sizes to strengthen and grow their customer base by building stronger relationship with their customers and other users.</p>
-					<a href="{{ url('/contact') }}" class="btn btn-primary mt-4">Contact Now</a>
+					<a href="{{ url('/contact') }}" class="btn btn-primary mt-2">Get to know us</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -37,17 +37,17 @@
 				<div class="footer-widget contact-widget mb-5">
 				  <h3 class="widget-title mb-4">Contact Us</h3>
 				    <ul>
-						<li>305 Bakesfield Costain, Surulere, Nigeria</li>
-						<li>+234 (0) 908 INSIGHT</li>
-						<li>info@compassinsights.ng</li>
+						<li>135A Brickfield Road, Costain Lagos.</li>
+						<li>+234 908 467 4448</li>
+						<li>talk@compassinsights.ng</li>
 				    </ul>
 				</div>
 				<div class="footer-widget media-widget mb-5">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-medium-m"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					{{-- <a href="#"><i class="fab fa-medium-m"></i></a> --}}
 				</div>
 			</div>
 		</div>
@@ -125,11 +125,33 @@ $(document).ready(function() {
 		showCircleTimer: false,
 		thumbnailNavigation: 'disabled',
 		allowRestartOnResize: true,
-		skinsPath: 'assets/skins/',
+		skinsPath: 'css/assets/skins/',
 		height: 870
 	});
 	
 });
+
+// $(document).ready(function() {	
+
+// $('#testimonials').layerSlider({
+// 	sliderVersion: '6.0.0',
+// 	type: 'fullwidth',
+// 	responsiveUnder: 0,
+// 	layersContainer: 1200,
+// 	maxRatio: 1,
+// 	parallaxScrollReverse: true,
+// 	hideUnder: 0,
+// 	hideOver: 100000,
+// 	skin: 'v5',
+// 	showBarTimer: false,
+// 	showCircleTimer: false,
+// 	thumbnailNavigation: 'disabled',
+// 	allowRestartOnResize: true,
+// 	skinsPath: 'css/assets/skins/',
+// 	height: 870
+// });
+
+// });
 
 </script>
 

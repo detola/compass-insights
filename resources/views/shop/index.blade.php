@@ -1,80 +1,20 @@
-@extends('layouts/frontpage')
+@extends('layouts.frontpage')
 
 @section('content')
     <!--Hero Section-->
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg-9.png); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">Product Page</h1>
-                <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Product Page, feel free to choose from the variety of product that's we've itemised for you</span>
+                <h1 class="text-white text-center down-line-white">Our Products</h1>
+                {{-- <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Product Page, feel free to choose from the variety of product that's we've itemised for you</span> --}}
             </div>
         </div>
     </div>
 </div>
 
 
-<!--Product Section Begin-->
-<div class="full-row bg-primary">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-5 col-md-12">
-				<div class="text-secondary mb-5">
-					<span class="text-secondary pb-3 tagline">Customer Insights</span>
-					<h2 class="text-secondary mb-4">Customer Engagement Boosters</h2>
-					<p>Our boosters are a great way to introduce structure to your business, because once you have them, 
-						team members simply need to follow the established guidelines. We have four great boosters that 
-						can transform your customers’ experiences. They eliminate guesswork in your processes and so ensure 
-						that your team knows exactly what to do at any given time and that all customers have a consistent 
-						pleasant experience. They are easy to use, so you can delegate comfortably and leave these tasks to 
-						the staff responsible and have more time for you to focus on tweaking and refining the actual products 
-						for your business growth. It also means your team is a lot more efficient and effective in achieving 
-						your business goals.</p>
-					<p>Are you working solo or as a freelancer? Great but your customers do not need to know that! Our 
-						boosters can work for you too - they give you the confidence to provide consistent service and 
-						address any queries or issues - and by so doing, set a great standard for your business.</p>
-					<a href="#" class="btn btn-dark mt-3">About Company</a>
-				</div>
-			</div>
-			<div class="col-lg-7 col-md-12">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="simple-thumb text-secondary transation mb-5">
-							<i class="flaticon-sketch flat-medium text-secondary"></i>
-							<h5 class="my-3"><a href="#" class="text-secondary">Creative Design</a></h5>
-							<p>Nam aenean nibh fringilla maecenas erdum taciti id, interdum donec aliqua. Convallis et eleifend 
-								torquent ac, dapibus suscipit auctor arcu posuere eu placerat lvinar.</p>
-							<a href="#" class="btn btn-dark mt-3">About Company</a>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="simple-thumb text-secondary transation mb-5">
-							<i class="flaticon-student flat-medium text-secondary"></i>
-							<h5 class="my-3"><a href="#" class="text-secondary">Corporate Template</a></h5>
-							<p>Nam aenean nibh fringilla maecenas erdum taciti id, interdum donec aliqua. Convallis et eleifend torquent ac, dapibus suscipit auctor arcu posuere eu placerat lvinar.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="simple-thumb text-secondary transation mb-5">
-							<i class="flaticon-conveyor flat-medium text-secondary"></i>
-							<h5 class="my-3"><a href="#" class="text-secondary">Easy Customize</a></h5>
-							<p>Nam aenean nibh fringilla maecenas erdum taciti id, interdum donec aliqua. Convallis et eleifend torquent ac, dapibus suscipit auctor arcu posuere eu placerat lvinar.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="simple-thumb text-secondary transation mb-5">
-							<i class="flaticon-import flat-medium text-secondary"></i>
-							<h5 class="my-3"><a href="#" class="text-secondary">Automatic Update</a></h5>
-							<p>Nam aenean nibh fringilla maecenas erdum taciti id, interdum donec aliqua. Convallis et eleifend torquent ac, dapibus suscipit auctor arcu posuere eu placerat lvinar.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="full-row">
+<div class="full-row" id="boosters">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mb-5">
@@ -106,8 +46,8 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 1</span>
-						<h5 class="text-dark mb-3 text-uppercase">First Impression Matters : Make a great first impression 
-							and increase conversion rates</h5>
+						<h5 class="text-dark mb-3 text-uppercase">First Impression Matters: <i>Make a great first impression 
+							and increase conversion rates</i></h5>
 						<p>No better time to make a good impression than the first encounter with your business –
 							from WhatsApp to calls, social media to emails, we ensure that a potential client’s first
 							interaction with you is unforgettable for the right reasons. 
@@ -115,6 +55,7 @@
 							value you provide to potential customers. A positive first impression is more likely to 
 							yield to a sale. It also converts the potential customer to an ambassador even if they 
 							don’t make an initial purchase.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -123,7 +64,7 @@
 									<input type="hidden" name="details" value="First Impression Matters : 
 									Make a great first impression and increase conversion rates">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -131,8 +72,8 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 2</span>
-						<h5 class="text-dark mb-3 text-uppercase">Order Management: Set a gold standard for your business, be known for your seamless
-							order processes</h5>
+						<h5 class="text-dark mb-3 text-uppercase">Order Management: <i>Set a gold standard for your business, be known for your seamless
+							order processes</i></h5>
 						<p>You have made a good first impression, and secured a sale - great! But how seamless is
 							your order process, from when the order is received to fulfilment?
 							Set a gold standard for your business and have a no-hiccup, no-excuses order
@@ -141,6 +82,7 @@
 							The Order Management booster ensures that your customers have a seamless order
 							process, consistently providing reassurance to your customer and ensuring referrals as
 							well as repeat orders.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -149,7 +91,7 @@
 									<input type="hidden" name="details" value="Order Management: Set a gold 
 									standard for your business, be known for your seamless order processes">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -157,7 +99,7 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 3</span>
-						<h5 class="text-dark mb-3 text-uppercase">The Delivery Experience Revamp: Be outstanding</h5>
+						<h5 class="text-dark mb-3 text-uppercase">The Delivery Experience Revamp: <i>Be outstanding</i></h5>
 						<p>This booster is a must-have for all product vendors, and can be used by service vendors
 							too. This is when the customer gets to experience what they ordered. From first
 							impressions through the order process, this is where your promises are either made or
@@ -166,6 +108,7 @@
 							The delivery experience can make or break the order success. Provide upfront
 							information about what happens to unwanted products/services. Ensure your customer
 							delivery experience is a positive one, all the time.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -173,7 +116,7 @@
 									<input type="hidden" name="name" value="Booster 3">
 									<input type="hidden" name="details" value="The Delivery Experience Revamp: Be outstanding">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -181,8 +124,8 @@
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 4</span>
-						<h5 class="text-dark mb-3 text-uppercase">Troubleshooting for Success: Be prepared to address queries, 
-							complaints and feedback</h5>
+						<h5 class="text-dark mb-3 text-uppercase">Troubleshooting for Success: <i>Be prepared to address queries, 
+							complaints and feedback</i></h5>
 						<p>No matter how hard you try, complaints are going to come. Yet, excellent businesses
 							know that complaints are the elements needed for service improvement. So, how
 							equipped are you to address complaints and feedback?
@@ -193,6 +136,7 @@
 							Get the Troubleshooting for Success booster and resolve issues, respond to queries and
 							complaints and receive feedback graciously. Who knows, you might get a loyal
 							customer through this.</p>
+							<del class="text-dark text-uppercase">NGN 25,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -201,26 +145,17 @@
 									<input type="hidden" name="details" value="Troubleshooting for Success: 
 									Be prepared to address queries, complaints and feedback">
 									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 20,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
 								</form>
 					</div>
 				</div>
-				<div class="feature-thumb-border hover-text-white bg-light transation w-50 w-sm-100 d-flex float-left p-4">
+				{{-- <div class="feature-thumb-border hover-text-white bg-light transation w-50 w-sm-100 d-flex float-left p-4">
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
-						<span class="text-primary d-table tagline">Booster Pack</span>
-						<h5 class="text-dark mb-3 text-uppercase">Get All 4 Bossters</h5>
-						<p>No matter how hard you try, complaints are going to come. Yet, excellent businesses
-							know that complaints are the elements needed for service improvement. So, how
-							equipped are you to address complaints and feedback?
-							This booster ensures that you have an established system to address complaints,
-							feedback or customer queries knowledgeably, professionally and without making the
-							other party feel uncomfortable. Better to hear these complaints first hand than to see
-							your business trending for a negative reason!
-							Get the Troubleshooting for Success booster and resolve issues, respond to queries and
-							complaints and receive feedback graciously. Who knows, you might get a loyal
-							customer through this.</p>
-							<del>100,000</del>
+						<span class="text-primary d-table tagline">Booster Bundle</span>
+						<h5 class="text-dark mb-3 text-uppercase">Get All 4 Boosters</h5>
+						<p>For a complete experience, get all boosters as a bundle and make significant savings</p>
+							<del class="text-dark text-uppercase">NGN 100,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -228,7 +163,26 @@
 									<input type="hidden" name="name" value="Booster Pack">
 									<input type="hidden" name="details" value="Get All 4 Bossters">
 									<input type="hidden" name="price" value="50000">
-									<button type="submit" class="btn btn-dark mt-3">Get this now for NGN 50,000 launch price</button>
+									<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N50,000 launch price</button>
+								</form>
+					</div>
+				</div> --}}
+
+				<div class="feature-thumb-border hover-text-white bg-primary transation w-50 w-sm-100 d-flex float-left p-4">
+					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-dark"></i></span>
+					<div class="pl-3">
+						<span class="text-dark d-table tagline">Booster Bundle</span>
+						<h5 class="text-white mb-3 text-uppercase">Get All 4 Boosters</h5>
+						<p class="text-white">For a complete experience, get all boosters as a bundle and make significant savings</p>
+							<del class="text-dark text-uppercase">NGN 100,000</del>
+							
+								<form action="{{route('cart.store')}}" method="post">
+									{{ csrf_field() }}
+									<input type="hidden" name="id" value="5">
+									<input type="hidden" name="name" value="Booster Bundle">
+									<input type="hidden" name="details" value="Get All 4 Boosters">
+									<input type="hidden" name="price" value="50000">
+									<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N50,000 launch price</button>
 								</form>
 					</div>
 				</div>
@@ -237,250 +191,266 @@
 	</div>
 </div>
 
-<div class="full-row">
+
+
+{{-- Compass Launchpads --}}
+<div class="full-row" id="launchpads">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mb-5">
-				<span class="text-primary pb-2 d-table m-auto tagline">Lauchpads</span>
-				<h2 class="main-title down-line w-50 mx-auto mb-4 text-center w-sm-100">Compass Launchpads</h2>
-				<span class="d-table w-50 w-sm-100 sub-title mx-auto text-center mb-5">Our Launchpads are specially packaged to transform key areas of your business at the pace you like. Start your journey to successful customer engagements and make customer service quality and engagement, a unique selling point (USP) of your business.</span>
+				<h2 class="main-title down-line-tertiary w-50 m-auto text-center w-sm-100">Compass Business Launchpads</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4 col-md-4 p-0">
-				<div class="pricing-table-simple p-5 bg-light">
-					<div class="box-100px p-3 mx-auto rotate45 mb-4"><span class="flaticon-kite flat-large text-primary"></span></div>
-					<h4 class="text-center mb-3">The Starter Launchpad</h4>
-					<p class="text-center">Get the Compass business review, understand your customers perspectives better and get detailed insights on how to improve and grow your business. The Compass Starter Launchpad is a good start on your customer engagement journey and a foundational block to build on.</p>
-					<ul class="py-2">
-						<li><i class="fas fa-check pr-1 text-primary"></i> Basic business review</li>
-						<li><i class="fas fa-check pr-1 text-primary"></i> Customised feedback from from up to 15 of your customers (surveys)</li>
-						<li><i class="fas fa-check pr-1 text-primary"></i> Strategic insights on key areas in your business</li>
-						<li><i class="fas fa-check pr-1 text-primary"></i> Implementation plan to develop your customer engagement system</li>
-					</ul>
-					<hr>
-					<div class="text-center"><span class="text-primary font-large">NGN35,000</span></div>
-					<a href="#" class="btn btn-primary mt-4 mx-auto d-block">Add to basket</a>
+			<div class="col-lg-12">
+				<div class="w-75 text-center mx-auto d-block w-sm-100">
+					<p>Our Launchpads are specially packaged to transform key areas of your business at the pace
+						you like. Start your journey to successful customer engagements and make customer service
+						quality and engagement, a unique selling point (USP) of your business.
+						Fully customized to your business needs, one great benefit of our launchpads is that the
+						insights gained from the stipulated number of customers can be replicated across board for your
+						entire customer base. Achieve more profitability with a stronger understanding of your key
+						business issues and uncover new opportunities for growth.
+						Select one of three affordable launchpads
+					</p>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 p-0">
-				<div class="pricing-table-simple popular p-5 text-white bg-primary">
-					<div class="box-100px p-3 mx-auto rotate45 mb-4"><span class="flaticon-plane flat-large text-white"></span></div>
-					<h4 class="text-center text-white mb-3">Essential</h4>
-					<p class="text-center">Business Strategy Review Customer Engagement Growth Kit for up to 25 customers
-						Team Health Assessment 
-						</p>
-					<ul class="py-2">
-						<li><i class="fas fa-check pr-1 text-white"></i> First impression matters</li>
-						<li><i class="fas fa-check pr-1 text-white"></i> Troubleshooting</li>
-					</ul>
-					<hr>
-					<div class="text-center"><span class="text-white font-large">NGN75,000</span></div>
-					<a href="#" class="btn btn-white mt-4 mx-auto d-block">Get Started</a>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 p-0">
-				<div class="pricing-table-simple p-5 text-white bg-dark">
-					<div class="box-100px p-3 mx-auto rotate45 mb-4"><span class="flaticon-start flat-large text-white"></span></div>
-					<h4 class="text-center text-white mb-3">Premium</h4>
-					<p class="text-center">Business Strategy Review Customer Engagement Growth Kit for up to 40 customers
-						Customer Relationship Management System Set Up Team Health Assessment. 
-						</p>
-					<ul class="py-2">
-						<li><i class="fas fa-check pr-1 text-white"></i> First impression matters</li>
-						<li><i class="fas fa-check pr-1 text-white"></i> Seamless Order</li>
-						<li><i class="fas fa-check pr-1 text-white"></i> The Ultimate Delivery Experience.</li>
-						<li><i class="fas fa-check pr-1 text-white"></i> Troubleshooting</li>
-					</ul>
-					<hr>
-					<div class="text-center"><span class="text-white font-large">NGN250,000</span></div>
-					<a href="#" class="btn btn-primary mt-4 mx-auto d-block">Get Started</a>
-				</div>
+				<!--<div class="mx-auto d-table wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+					<img src="assets/images/background/bg-13.png" alt="corporate template">
+				</div>-->
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="full-row pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-7">
-				<span class="tagline text-primary pb-2 d-table w-xs-100">Essential Package</span>
-				<h3 class="down-line mb-4">Compass Customer Experience Packages - Essential</h3>
-				<!--<span class="d-table sub-title ordenery-font mb-4">Mauris primis turpis Laoreet magna felis mi amet 
-					quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span>-->
-				<p>Strategy Review: 30-minute call and then 1 email follow up one week after 
-					Customer feedback carried out via Whatsapp messages and emails for 25 customers.
-					Team health check carried out via survey to assess the state of and advise on the 
-					improvement of your internal systems as they affect your customer engagement process.
-					</p>
-				<!--<ul class="list-full-width">
-					<li><i class="far fa-plus-square text-primary mr-2"></i> Fames elementum diam ridiculus quis varius.</li>
-					<li><i class="far fa-plus-square text-primary mr-2"></i> Quisque ultricies neque mi sollicitudin sociis potenti viverra.</li>
-					<li><i class="far fa-plus-square text-primary mr-2"></i> Neque Consequat tellus pede sociosqu viverra purus massa mollis sapien.</li>
-				</ul>-->
-				<div class="bb-accordion ac-single-show accordion-plus-left">
-					<div class="ac-card">
-						<a class="ac-toggle d-block py-2 text-secondary font-small higlight-font active" href="javascript:void(0);">First Impression Matters</a>
-						<div class="ac-collapse show" style="display: block">
-							<p>There is no time to make a good second impression, whatever the medium used to get in touch with you.  
-								This includes WhatsApp, calls, social media, and emails. We ensure that a potential customer’s first 
-								interaction with you is a positive one and a positive experience is more likely to yield to a sale than a negative one. 
-								Not to be taken lightly, a lot of businesses lose potential customers at this stage.
-								</p>
-						</div>
-					</div>
-					<div class="ac-card">
-						<a class="ac-toggle d-block py-2 text-secondary font-small higlight-font" href="javascript:void(0);">Troubleshooting</a>
-						<div class="ac-collapse">
-							<p>Yes, you want everything to go ahead without any issues, but this does not always happen. 
-								How equipped are you to address complaints and feedback? 
-								This booster ensures that when complaints or queries come in as they are going to, 
-								your business is able to deal with this empathetically and get to a favorable resolution 
-								and maybe a repeat customer and even referral in the process?
-								</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-5 col-md-5 offset-lg-1">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 border-right border-bottom">
-						<div class="px-4 py-5">
-							<span class="flaticon-conveyor flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">First Impression Matters</h5>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 border-bottom">
-						<div class="px-4 py-5">
-							<span class="flaticon-group-1 flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Troubleshooting</h5>
-						</div>
-					</div>
-					<!--<div class="col-lg-6 col-md-6 border-bottom">
-						<div class="px-4 py-5">
-							<span class="flaticon-online-marketing flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Seamless Order</h5>
-						</div>
-					</div>-->
-					<!--<div class="col-lg-6 col-md-6 border-right">
-						<div class="px-4 py-5">
-							<span class="flaticon-group-1 flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Revamp the Delivery Experience</h5>
-						</div>
-					</div>-->
-					<!--<div class="col-lg-6 col-md-6">
-						<div class="px-4 py-5">
-							<span class="flaticon-rocket flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Troubleshooting</h5>
-						</div>
-					</div>-->
-				</div>
-					<a href="#" class="btn btn-primary mt-4 mx-auto d-block">NGN 75,000</a>
-			</div>
+
+
+<!-- Case Study Section Start -->
+
+<div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-12">
+				<span class="text-tertiary pb-2 d-table">Compass Launchpads</span>
+				<h3 class="mb-4">The Starter Launchpad.</h3>
+				<p>Get the Compass business review, understand your customers perspectives better and get
+					detailed insights on how to improve and grow your business. 
+					The Compass Starter Launchpad is a good start on your customer engagement journey and a 
+					foundational block to build on.</p>					
+					<ul class="py-2"><!--list-half-width-->
+						<li><i class="fas fa-check pr-1"></i>Basic business review</li>
+						<li><i class="fas fa-check pr-1"></i>Customised feedback from from up to 15 of your customers ( surveys)</li>
+						<li><i class="fas fa-check pr-1"></i>Strategic insights on key areas in your business</li>
+						<li><i class="fas fa-check pr-1"></i>Implementation plan to develop your customer engagement system</li>
+					</ul>
+					<p >Enhance your business, transform your business by tracking your customers, understanding
+						they think of your product(s) and learn how you can improve your offerings.</p>
+						<form action="{{route('cart.store')}}" method="post">
+							{{ csrf_field() }}
+							<input type="hidden" name="id" value="6">
+							<input type="hidden" name="name" value="The Starter Launchpad.">
+							<input type="hidden" name="details" value="The Starter Launchpad.">
+							<input type="hidden" name="price" value="35000">
+							<button type="submit" class="btn btn-tertiary mt-4 d-table">Get this for NGN35,000 only</button>
+						</form>
+					{{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN35,000 only</a> --}}
 		</div>
 	</div>
 </div>
+</div>
 
-<div class="full-row pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-7">
-				<span class="tagline text-primary pb-2 d-table w-xs-100">Premium Package</span>
-				<h3 class="down-line mb-4">Compass Customer Experience Packages - Premium</h3>
-				<!--<span class="d-table sub-title ordenery-font mb-4">Mauris primis turpis Laoreet magna felis mi amet 
-					quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span>-->
-				<p>Business Strategy Review: 1 45-minute call and regular email follow up over the space of 1 week after the initial call.
-					Customer feedback: Carried out via a a mix of messages and calls to 40 of your customers
-					Setup of the customer relationship management system for your customers based on your specific business model.
-					Team health check carried out via survey to assess the state of and advise on the improvement of your internal systems as they affect your customer engagement process.
-					</p>
-				<!--<ul class="list-full-width">
-					<li><i class="far fa-plus-square text-primary mr-2"></i> Fames elementum diam ridiculus quis varius.</li>
-					<li><i class="far fa-plus-square text-primary mr-2"></i> Quisque ultricies neque mi sollicitudin sociis potenti viverra.</li>
-					<li><i class="far fa-plus-square text-primary mr-2"></i> Neque Consequat tellus pede sociosqu viverra purus massa mollis sapien.</li>
-				</ul>-->
-				<div class="bb-accordion ac-single-show accordion-plus-left">
-					<div class="ac-card">
-						<a class="ac-toggle d-block py-2 text-secondary font-small higlight-font active" href="javascript:void(0);">First Impression Matters</a>
-						<div class="ac-collapse show" style="display: block">
-							<p>There is no time to make a good second impression, whatever the medium used to get in touch with you.  
-								This includes WhatsApp, calls, social media, and emails. We ensure that a potential customer’s first 
-								interaction with you is a positive one and a positive experience is more likely to yield to a sale than a negative one. 
-								Not to be taken lightly, a lot of businesses lose potential customers at this stage.
-								</p>
-						</div>
-					</div>
-					<div class="ac-card">
-						<a class="ac-toggle d-block py-2 text-secondary font-small higlight-font" href="javascript:void(0);">Seamless Order</a>
-						<div class="ac-collapse">
-							<p>You have made a good first impression and secured a sale - great! Now it is time to 
-								think about your order process. You need to ensure it is seamless, from when the order 
-								is placed to when it is fulfilled. If you say your product/service is a good quality one, 
-								then how the order is carried out reveals to the customer how consistent your quality standards are. 
-								Our booster ensures that your customers have a seamless order process, consistently, 
-								providing reassurance to your customer and ensuring return business.
-								
-								</p>
-						</div>
-					</div>
-					<div class="ac-card">
-						<a class="ac-toggle d-block py-2 text-secondary font-small higlight-font" href="javascript:void(0);">Revamp the Delivery Experience</a>
-						<div class="ac-collapse">
-							<p>However, you deliver your products or services, you need to ensure that the customer experience remains a positive one.
-								</p>
-						</div>
-					</div>
-					<div class="ac-card">
-						<a class="ac-toggle d-block py-2 text-secondary font-small higlight-font" href="javascript:void(0);">Troubleshooting</a>
-						<div class="ac-collapse">
-							<p>Yes, you want everything to go ahead without any issues, but this does not always happen. 
-								How equipped are you to address complaints and feedback? 
-								This booster ensures that when complaints or queries come in as they are going to, 
-								your business is able to deal with this empathetically and get to a favorable resolution 
-								and maybe a repeat customer and even referral in the process?
-								</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-5 col-md-5 offset-lg-1">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 border-right border-bottom">
-						<div class="px-4 py-5">
-							<span class="flaticon-conveyor flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">First Impression Matters</h5>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 border-bottom">
-						<div class="px-4 py-5">
-							<span class="flaticon-online-marketing flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Seamless Order</h5>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 border-right">
-						<div class="px-4 py-5">
-							<span class="flaticon-group-1 flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Revamp the Delivery Experience</h5>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="px-4 py-5">
-							<span class="flaticon-rocket flat-medium text-primary d-table mb-3"></span>
-							<h5 class="text-secondary">Troubleshooting</h5>
-						</div>
-					</div>
-				</div>
-					<a href="#" class="btn btn-primary mt-4 mx-auto d-block">NGN 250,000</a>
-					<input type="hidden" value="250000">
-
+<div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-12">
+				<span class="text-tertiary pb-2 d-table">Compass Launchpads</span>
+				<h3 class="mb-4">The Essentials Launchpad.</h3>
+				<p>The next level of our offerings, The Compass Essentials Launchpad sets you up on the
+					essentials of customer engagement.
 					
-			</div>
+					What’s included:</p>					
+					<ul class="py-2"><!--list-half-width-->
+						<li><i class="fas fa-check pr-1"></i>A 30-minute Strategy Review call and email follow up in 1 week</li>
+						<li><i class="fas fa-check pr-1"></i>Detailed feedback from 25 of your customers (messages, surveys)</li>
+						<li><i class="fas fa-check pr-1"></i>Team assessment (from your employees as well to assess the state of your team, how
+							well they understand their role and responsibilities and how equipped they are to carry
+							out their work) (messages, surveys)</li>
+						<li><i class="fas fa-check pr-1"></i>Strategic insights on key areas in your business</li>
+						<li><i class="fas fa-check pr-1"></i>Implementation plan to develop key areas of your customer engagement system</li>
+					</ul>
+					<p >The essentials launchpad focuses on the internal system of your business, you can
+						improve your customer retention rate and increase your profit.</p>
+					<form action="{{route('cart.store')}}" method="post">
+						{{ csrf_field() }}
+						<input type="hidden" name="id" value="7">
+						<input type="hidden" name="name" value="The Essentials Launchpad.">
+						<input type="hidden" name="details" value="The Essentials Launchpad.">
+						<input type="hidden" name="price" value="75000">
+						<button type="submit" class="btn btn-tertiary mt-4 d-table">Get this for NGN75,000 only</button>
+					</form>
+					{{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN75,000 only</a> --}}
 		</div>
 	</div>
+</div>
+</div>
+
+<div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-12">
+				<span class="text-tertiary pb-2 d-table">Compass Launchpads</span>
+				<h3 class="mb-4">The Premium Launchpad.</h3>
+				<p>Get the premium experience with the Compass Premium Launchpad.
+					
+					What’s included:</p>					
+					<ul class="py-2"><!--list-half-width-->
+						<li><i class="fas fa-check pr-1"></i>A 45-minute business strategy review call and unlimited emails over one week</li>
+						<li><i class="fas fa-check pr-1"></i>Detailed feedback from 40 of your customers (calls, messages, surveys)</li>
+						<li><i class="fas fa-check pr-1"></i>Team assessment (from your employees as well to assess the state of your team, how
+							well they understand their role and responsibilities and how equipped they are to carry
+							out their work) (calls, messages, surveys)</li>
+						<li><i class="fas fa-check pr-1"></i>Strategic insights on key areas in your business</li>
+						<li><i class="fas fa-check pr-1"></i>Implementation plan to develop your customer engagement system</li>
+					</ul>
+					<p >Get a detailed strategic review with key improvements areas for your offerings to your
+						customers and employees.</p>
+					<p >We guide you on how to build structure, finetune your internal systems, accelerate employee
+						productivity so you can grow as a business.</p>
+					<p >Get your own customer engagement system and capture relevant information, connect regularly
+						and convert irregular customers into repeat customers and your brand ambassadors.</p>
+					<form action="{{route('cart.store')}}" method="post">
+						{{ csrf_field() }}
+						<input type="hidden" name="id" value="8">
+						<input type="hidden" name="name" value="The Premium Launchpad.">
+						<input type="hidden" name="details" value="The Premium Launchpad.">
+						<input type="hidden" name="price" value="250000">
+						<button type="submit" class="btn btn-tertiary mt-4 d-table">Get this for NGN250,000 only</button>
+					</form>
+					{{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN250,000 only</a> --}}
+		</div>
+	</div>
+</div>
 </div>
 
 
 
+
+{{-- Compass Business solution --}}
+
+<div class="full-row bg-light" id="business-solutions">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 mb-5">
+				<h2 class="main-title down-line-pink w-50 m-auto text-center w-sm-100">Compass Business Solutions</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="w-75 text-center mx-auto d-block w-sm-100">
+					<p>Our business solutions provide clarity in your business, identify opportunities and improve
+						performance. Compass Business Solutions are focused on equipping you with the tools to run
+						your business effectively and have a built-in reflection period to ensure you get the most out of
+						your time with us.
+					</p>
+				</div>
+				<!--<div class="mx-auto d-table wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+					<img src="assets/images/background/bg-13.png" alt="corporate template">
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full-row">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-lg-3 col-md-3">
+				<img src="css/assets/images/strategic.png" alt="">
+			</div>
+			<div class="offset-md-1 col-lg-8 col-md-8">
+				<div class="position-relative y-center">
+					<h4 class="mb-3">Business Strategy Review</h4>
+					<p>You don’t plan a road trip without knowing your destination. In the same way, having a
+						business strategy is an important step in charting the course of your business. We
+						recommend a biannual strategy review or at the very least, an annual review.</p>
+							<ul class="py-2">
+						   
+								<li><i class="fas fa-check pr-1"></i>Our detailed review - we spend time with you to understand your business and
+									current performance levels including your financials over two 45-minute calls.
+									You get 2 strategy review calls (one at the start and the other after a two-week
+									period, during which you may contact us via email to seek any clarifications.</li>
+							</ul>
+					<a href="{{ url('/contact') }}" class="btn-link text-dark">If you do not have a business strategy plan for us to work with yet, we can work with you to
+						create a winning business plan. (Contact Us)</a>
+					{{-- <div class="post-admin mt-4">
+						<ul>
+							<li><span>Post On:</span> 12th March 2019</li>
+							<li><span>Story By:</span> Jason Holder</li>
+						</ul>
+					</div> --}}
+				<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 100,000</a>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-5">
+			<div class="col-lg-8 col-md-8">
+				<div class="position-relative y-center">
+					<h4 class="mb-3">Accelerate: Employee Productivity</h4>
+					<p>Employee engagement in your business has a direct relationship with their output and
+						the service quality your customers get when they interact with your business. We assess
+						the state of your team and provide insights on how to fill existing gaps and accelerate
+						the general team productivity.</p>
+						<ul class="py-2">
+						   
+							<li><i class="fas fa-check pr-1"></i>We conduct a team feedback analysis, understand their individual motivations
+								and preferred rewards and review your internal process to see how you can
+								standardize to get the best out of your employees.</li>
+						</ul>
+				<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 70,000</a>
+				</div>
+			</div>
+			<div class="offset-md-1 col-lg-3 col-md-3">
+				<img src="css/assets/images/employees.png" alt="">
+			</div>
+		</div>
+		<div class="row mb-5">
+			<div class="col-lg-3 col-md-3">
+				<img src="css/assets/images/sq-17.png" alt="">
+			</div>
+			<div class="offset-md-1 col-lg-8 col-md-8">
+				<div class="position-relative y-center">
+					<h4 class="mb-3">Customer Engagement System Design</h4>
+					<p>Every business has its most valuable customers that provide the most value to the
+						business with every purchase or engagement made. Being aware of this helps you know
+						how to position your business to optimize a relationship with these customers as well as
+						groom other customers to this point.</p>
+					<ul class="py-2"><!--list-half-width-->
+						<li><i class="fas fa-check pr-1"></i>We assess the profiles of your customers and work with you to segment them.</li>
+						<li><i class="fas fa-check pr-1"></i>We review your current engagement practices and create new pathways for
+							better customer engagement across your key platforms and customer
+							touchpoints.</li>
+					</ul>
+					
+				<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 200,000</a>
+
+				</div>
+			</div>
+		</div>
+		<div class="row mb-5">
+			<div class="col-lg-8 col-md-8">
+				<div class="position-relative y-center">
+					<h4 class="mb-3">Market Research</h4>
+					<p>Tailored to your particular needs as regards customer insights,
+						product insights, a pitch, competition insights or any other area in which you may need
+						reliable data to make informed decisions for your business. Contact us to share your
+						needs and get a quote.</p>
+					
+				<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">Contact us to get a quote</a>
+				</div>
+			</div>
+			<div class="offset-md-1 col-lg-3 col-md-3">
+				<img src="css/assets/images/sq-21.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
 
 @endsection

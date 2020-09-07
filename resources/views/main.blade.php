@@ -3,9 +3,9 @@
 @section('content')
     <!-- Slider HTML markup -->
 <div class="full-row p-0 overflow-hidden">
-	<div id="slider" style="width:1200px; height: 980px;margin:0 auto;margin-bottom: 0px;">	
+	<div id="slider" style="width:1200px; height: 980px;margin:0 auto;margin-bottom: 0px; slidedirection: left;">	
 		<!-- Slide 1-->
-		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:10000; transition2d:3; timeshift:1000; deeplink:home; kenburnszoom:in; kenburnsrotate:0; kenburnsscale:1.1; parallaxevent:scroll; parallaxdurationmove:500;">
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:10000; transition2d:3; timeshift:1000; deeplink:home; kenburnszoom:in; kenburnsrotate:0; kenburnsscale:1.1; parallaxevent:scroll; parallaxdurationmove:500;" style="slidedirection: left;">
 			<img width="1920" height="1080" src="css/assets/images/slider/corporate10.jpg" class="ls-bg" alt="" />
 			
 			<div style="width:100%; height:100%; background:rgba(24, 27, 36, 0.6); top:50%; left:50%;" class="ls-l" data-ls="showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:1.5; scaleyin:1.5; position:fixed;"></div>
@@ -21,9 +21,8 @@
 		</div>
 		
 		<!-- Slide 2-->
-		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:3; timeshift:-500; deeplink:home; kenburnszoom:in; kenburnsrotate:0; kenburnsscale:1.1; parallaxevent:scroll; parallaxdurationmove:500;">
-			<img width="1920" height="1050" src="css/assets/images/slider/corporate11.jpg" class="ls-bg" alt="" />
-			
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:3; timeshift:-500; deeplink:home; kenburnszoom:in; kenburnsrotate:0; kenburnsscale:1.1; parallaxevent:scroll; parallaxdurationmove:500;" style="slidedirection: left;">
+			<img width="1920" height="1080" src="css/assets/images/slider/corporate11.jpg" class="ls-bg" alt="" />
 			<div style="width:100%; height:100%; background:rgba(24, 27, 36, 0.6); top:50%; left:50%;" class="ls-l" data-ls="showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:1.5; scaleyin:1.5; position:fixed;"></div>
 			
 			<p style="font-weight:400; text-align:center; width:700px; font-size:60px; line-height:70px; top:360px; left:50%; white-space:normal;" class="ls-l text-white ls-hide-phone higlight-font" data-ls="offsetyin:40; delayin:1500; easingin:easeOutQuint; filterin:blur(10px); offsetyout:-200; durationin:1500; durationout:400; parallax:false; parallaxlevel:3;">Working with you to build a customer focused business.</p>
@@ -93,25 +92,27 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 </div> --}}
 
 
-<div class="full-row bg-primary">
+
+
+<div class="full-row bg-white">
 	<div class="container">
 	<div class="row">
-		<div class="col-lg-5 col-md-12">
+		<div class="col-lg-6 col-md-12">
 			<div class="text-secondary mb-5">
-				<span class="text-secondary pb-3 tagline">Customer Insights</span>
-				<h2 class="text-secondary mb-4">Working with you to build a customer focused business.</h2>
+				<span class="text-primary pb-3 tagline">Customer Insights</span>
+				<h2 class="text-primary mb-4">Working with you to build a customer focused business.</h2>
 				<p>Compass Insights is committed to building stronger customer-centric organizations that are
 					sustainable through time.</p>
 				{{-- <p>There are 3 ways to get started …. explore options below</p> --}}
 				{{-- <a href="#" class="btn btn-dark mt-3">About Company</a> --}}
 			</div>
 		</div>
-		<div class="col-lg-7 col-md-12">
-			<div style="height: 600px; width:100%;">
+		<div class="col-lg-6 col-md-12">
+			{{-- <div style="height: 600px; width:100%;">
 				<div class="compass_container">
 					<a id="square-1" class="square compass" href=" {{ url('/thread') }} "></a>
 					<a id="square-2" class="square compass" href=" {{ url('/shop/boosters') }} "></a>
@@ -127,26 +128,52 @@
 					<a href="{{ url('/shop/business-solutions') }}"><div class="circTxt3" id="test"></div></a>
 					<a href="{{ url('/thread') }} "><div class="circTxt4" id="test"></div></a>
 				</div>
-			</div>
+			</div> --}}
+			<div id="skills">
+				<div id="part1" class="circle animate"></div>
+				<div id="part2" class="circle animate"></div>
+				<div id="part3" class="circle animate"></div>
+				<div id="part4" class="circle animate"></div>
+			  
+				<div class="text-white">
+	
+				  <a href="{{ url('/shop#boosters') }}" class="text-circle-top text-white" 
+				  data-toggle="tooltip" 
+				  title="Our customized boosters allow you to present a consistent face to your business and a high service quality level. We have 4 boosters that will save your time, standardize your processes, improve your service quality, increase your conversion rate and transform your customer experience. The boosters are customized to meet your business’ needs so no two boosters are the same.">Compass Business Boosters</a>
+				  <a href="{{ url('/shop#launchpads') }}" class="text-circle-right text-white"
+				  data-toggle="tooltip"
+				  title="Bring new life to your business. Get one of our launchpads specially designed to allow you to address your pressing business challenges. You can choose from our starter, essential or premium packages to sstreamline your activities and achieve more with what you have.">Compass Business Launchpads</a>
+				<a href="{{ url('/thread') }}" class="text-circle-bottom text-white"
+				data-toggle="tooltip"
+				title="Get access to questions, answers and discussions business owners have, that highlight the business problems they face and the solutions implemented, when you join the Compass Network. To make the experience wholesome, you also get to ask your own questions and get engagement from other business owners.">
+				Ask Compass</a>
+				<a href="{{ url('/shop#business-solutions') }}" class="text-circle-left text-white"
+				data-toggle="tooltip"
+				title="If you need clarity on your business and an advisor to identify opportunities and improve performance, then our affordable business solutions are for you. They are focused on equipping you with the tools to run your business effectively and have a built-in reflection period to ensure you get the most out of your time with us.">
+				Compass Business Solutionsw</a>
+				</div>
+				
+			  </div>
 		</div>
 	</div>
 	</div>
 </div>
 
-<div class="full-row" style="background-image: url(css/assets/images/background/bg-29.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="full-row" style="background-image: url(css/assets/images/background/bg002.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+	<div style="width:100%; height:100%; background:rgba(24, 27, 36, 0.6); top:50%; left:50%;"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7 col-md-7 offset-md-5">
-				<div class="text-light">
-					<span class="tagline text-primary pb-2 d-table w-xs-100">How It Work</span>
-					<h2 class="down-line text-white mb-4">How Compass Approach Work</h2>
-					<p>For a business to be viable, it needs to have customers. While the focus is usually on getting
+				<div class="text-light" style="width:100%; height:100%; padding:2%; background:rgba(24, 27, 36, 0.6); top:50%; left:50%;">
+					{{-- <span class="tagline text-primary pb-2 d-table w-xs-100">How It Work</span> --}}
+					<h2 class="down-line text-white mb-4">The Compass Way</h2>
+					<p class="text-white">For a business to be viable, it needs to have customers. While the focus is usually on getting
 						new customers, businesses can be better off building better relationships with existing
 						customers.
 						The insights we obtain from your customers will enable you to create better products for them,
 						market them in a targeted way, enhancing your value and optimizing your returns.</p>
 
-						<a href="{{ url('/shop/boosters') }}" class="btn btn-primary d-table mt-5">Explore more Compass Offerings to help you achieve this</a>
+						<a href="{{ url('/shop#boosters') }}" class="btn btn-primary d-table mt-5">Our Products</a>
 					{{-- <div class="simple-video-play d-table mt-5">
 						<a data-fancybox href="https://www.youtube.com/watch?v=0HnHUBeIBqU" class="rounded-circle"><i class="flaticon-play-button position-relative xy-center flat-mini rounded-circle text-white bg-primary"></i></a><span class="pl-3 text-white">Explore more Compass Offerings to help you achieve this</span>
 					</div> --}}
@@ -156,29 +183,29 @@
 		<div class="bg-white p-5 mt-5">
 			<div class="row">
 				<div class="col-lg-4 col-md-12 simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm">
-					<span class="h3 down-line text-primary mb-4 d-table">01</span>
+					{{-- <span class="h3 down-line text-primary mb-4 d-table">01</span> --}}
 					{{-- simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm mb-30 px-4 py-5 --}}
 					<h4 class="mb-3">How well is your team doing?</h4>
 					<p>Do they know the expectations of the business? Do they have
-						specific challenges that affect productivity? Find out and fix any potential issues before they
+						specific challenges that affect productivity? <a href="{{ url('/shop#business-solutions') }}">Find out</a> and fix any potential issues before they
 						emerge.</p>
-						<a href="{{ url('/shop/business-solutions') }}" class="btn-link">Read More</a>
+						{{-- <a href="{{ url('/shop/business-solutions') }}" class="btn-link">Read More</a> --}}
 				</div>
 				<div class="col-lg-4 col-md-12 simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm">
-					<span class="h3 down-line text-primary mb-4 d-table">02</span>
+					{{-- <span class="h3 down-line text-primary mb-4 d-table">02</span> --}}
 					<h4 class="mb-3">How well do you know your major clients/customers?</h4>
 					<p>Do you know their purchasing power?
-						Who is your target audience? Find out how to position your offer optimally and engage better
+						Who is your target audience? <a href="{{ url('/shop#business-solutions') }}">See</a> how to position your offer optimally and engage better
 						with them</p>
-						<a href="{{ url('/shop/business-solutions') }}" class="btn-link">Read More</a>
+						{{-- <a href="{{ url('/shop/business-solutions') }}" class="btn-link">Read More</a> --}}
 				</div>
 				<div class="col-lg-4 col-md-12 simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm">
-					<span class="h3 down-line text-primary mb-4 d-table">03</span>
+					{{-- <span class="h3 down-line text-primary mb-4 d-table">03</span> --}}
 					<h4 class="mb-3">Experience is the best teacher</h4>
 					<p>Experience is the best teacher but experiences do not have to happen to you before you learn
 						from them. Check out our <a href="{{ url('/blog') }}">insights</a> and see customer
 						engagement issues businesses are facing and how they are getting through them.</p>
-						<a href="{{ url('/blog') }}" class="btn-link">Read More</a>
+						{{-- <a href="{{ url('/blog') }}" class="btn-link">Read More</a> --}}
 				</div>
 			</div>
 		</div>
@@ -354,16 +381,15 @@
 @empty
 @endforelse 
 
-<div class="full-row p-0 bg-footer">
+{{-- <div class="full-row p-0 bg-footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="border-bottom-gray" style="padding: 50px 0">
 					<div class="row">
 						<div class="col-md-5">
-							<h6 class="mb-sm-30 text-white">Want to increase your customer base or your customer retention rate? Let Compass show you
-								how. Sign up for our newsletters. We promise not to spam you and keep your information
-								confidential. You can even select how frequently you want to hear from us.</h6>
+							<h6 class="mb-sm-30 text-white">Want to increase your customer base or y
+								our customer retention rate? Let Compass show you how. Sign up to join our network</h6>
 						</div>
 						<div class="col-md-7">
 							<form action="#" class="subscribe-form position-relative">
@@ -372,6 +398,34 @@
 							</form>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> --}}
+
+
+<div class="full-row bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12">
+				<h3 class="mb-5 text-white">Subscribe For Our Newsletter</h3>
+				<div class="row">
+					<h6 class="mb-sm-30 text-white">Want to increase your customer base or y
+						our customer retention rate? Let Compass show you how. Sign up to join our network</h6>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<div class="sign-up-box bg-white py-5 px-4 text-center">
+					<h4 class="text-center mb-4">Sign up to join our network</h4>
+					<p>Lacinia laoreet senectus fames tortor nisi. Rhoncus semper nostra.</p>
+					<form action="#" method="post">
+						<input type="text" name="name" class="form-control bg-light mb-3" placeholder="Name" />
+						<input type="email" name="industry" class="form-control bg-light mb-3" placeholder="Industry" />
+						<input type="email" name="email" class="form-control bg-light mb-3" placeholder="Email Address" />
+						<button type="button" class="btn btn-primary w-100 mb-3">Subscribe Now</button>
+					</form>
+					{{-- <span>Lorem semper netus praesent senectus vivamus dapibus nostra.</span> --}}
 				</div>
 			</div>
 		</div>

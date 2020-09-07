@@ -2,12 +2,12 @@
 
 @section('content')
     
-	<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
+	<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg001.jpg); background-position: center center; background-size: cover">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<h1 class="text-white down-line-white">Compass Insight</h1>
-					<span class="text-white mt-4 sub-title w-50 w-sm-100">People freequenly ask question and get answer from our cool stuff. User can feel free to ask question and we answer asap.</span>
+					<span class="text-white mt-4 sub-title w-50 w-sm-100">Our trove of insights for your business growth.</span>
 				</div>
 			</div>
 		</div>

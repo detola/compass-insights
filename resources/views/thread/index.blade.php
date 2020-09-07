@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg001.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -42,7 +42,8 @@
                         <ul>
                             <li>
                                 <a href="{{route('thread.show', $thread->id)}}">{{$thread->subject}}</a>
-                                <span class="post-date">{{$thread->created_at}}</span>
+                                <span class="post-date">{{$thread->user->name}}</span>
+                                <span class="post-date">{{$thread->created_at->diffForHumans()}}</span>
                             </li>
                         </ul>
                         @empty

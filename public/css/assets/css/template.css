@@ -81,6 +81,12 @@ a.hover-text-primary:hover,
 .text-primary {
 	color: var(--theme-primary-color) !important;
 }
+.text-tertiary{
+	color: var(--theme-tertiary-color)
+}
+.text-pink{
+	color: var(--theme-pink-color)
+}
 a,
 a:hover,
 .btn-link,
@@ -170,13 +176,22 @@ a.hover-text-white:hover {
 	color: var(--text-light-color)
 }
 
-
 /*============ Background Colors ===============*/
 .hover-bg-primary:hover,
 .nav-tab-border .nav-link.mixitup-control-active,
 .page-item.active .page-link,
 .down-line::before{
 	background-color: var(--theme-primary-color);
+}
+
+.hover-bg-primary:hover,
+.down-line-tertiary::before{
+	background-color: var(--theme-tertiary-color);
+}
+
+.hover-bg-primary:hover,
+.down-line-pink::before{
+	background-color: var(--theme-pink-color);
 }
 .nav-white-hover.nav-line-active .navbar-nav .active > .nav-link:before,
 .nav-white-hover.nav-line-active .navbar-nav .active > .nav-link:before,
@@ -264,6 +279,17 @@ a.hover-text-white:hover {
 	color: var(--theme-white-color);
 	background-color: var(--theme-secondary-color);
 }
+
+.btn-tertiary{
+	color: var(--theme-white-color);
+	background-color: var(--theme-tertiary-color);
+}
+
+.btn-pink{
+	color: var(--theme-white-color);
+	background-color: var(--theme-pink-color);
+}
+
 .btn-white{
 	color: var(--theme-secondary-color);
 	background-color: var(--theme-white-color);
@@ -526,11 +552,15 @@ a.text-dark:focus {
 [class*="overlay-"],
 .down-line-white,
 .down-line-secondary,
+.down-line-tertiary,
+.down-line-pink,
 .down-line{
 	position: relative;
 }
 .down-line-white,
 .down-line-secondary,
+.down-line-tertiary,
+.down-line-pink,
 .down-line{
 	padding-bottom: 20px
 }
@@ -545,6 +575,8 @@ a.text-dark:focus {
 }
 .down-line-white:before,
 .down-line-secondary:before,
+.down-line-tertiary:before,
+.down-line-pink:before,
 .down-line::before{
 	position: absolute;
 	content: "";

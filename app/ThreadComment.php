@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class ThreadComment extends Model
 {
     //
+    protected $fillable = [
+        'user_id',
+        'commentable_id',
+        'commentable_type',
+        'body',
+    ];
 
     //public function thread()
     //{
@@ -15,6 +21,11 @@ class ThreadComment extends Model
     public function commentable()
     {
         return $this->morphTo();
+    }
+
+    public function thread()
+    {
+        return $this->belongsTo(Thread::class);
     }
 
     public function user()

@@ -5,25 +5,32 @@ namespace App\Http\Controllers;
 use App\ThreadComment;
 use Illuminate\Http\Request;
 use App\Thread;
+use Illuminate\Support\Facades\Auth;
 
 class ThreadCommentController extends Controller
 {
     
-    public function addThreadComment(Request $request, Thread $thread)
+    public function addThreadComment(Request $request)
     {
+        //dd($request);
+
+        $user = Auth::user();
+
         $this->validate($request,[
             'body'=>'required'
         ]);
 
-        $comment = new ThreadComment();
-        $comment->body = $request->body;
-        $comment->user_id = auth()->user()->id;
-        //$comment->commentable_id = $
-        //dd($comment);
+        $data = [
+            'user_id' => $user->id,
+            'body' => $request->body,
+            'commentable_id' => $request->commentable_id,
+            'commentable_type' => $request->commentable_type
+        ];
 
-        $thread->threadcomments()->save($comment);
+        ThreadComment::create($data);
 
-        return back()->withMessage('Comment created');
+        return redirect()->back()->withMessage('Your comment has been added.');
+
     }
 
     /**

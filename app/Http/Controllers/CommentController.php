@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
@@ -15,6 +17,9 @@ class CommentController extends Controller
     public function index()
     {
         //
+        $comments = Comment::all();
+
+        return view('admin.comments.index', compact('comments'));
     }
 
     /**
@@ -36,6 +41,24 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         //
+        $user = Auth::user();
+
+        $data = [
+
+            'post_id'=> $request->post_id,
+            'photo_id' => $user->photo_id,
+            'author' => $user->name,
+            'email' => $user->email,
+            'body' => $request->body,
+
+        ];
+
+
+        Comment::create($data);
+
+        $request->session()->flash('comment_msg', 'Your comment has been added.');
+
+        return redirect()->back();
     }
 
     /**
@@ -47,6 +70,11 @@ class CommentController extends Controller
     public function show(Comment $comment)
     {
         //
+        $posts = Post::findOrFail($id);
+
+        $comments = Comment::all();
+
+        return view('admin.comments.show', compact('posts', 'comments'));
     }
 
     /**
@@ -82,4 +110,38 @@ class CommentController extends Controller
     {
         //
     }
+
+
+
+    // $replies = Reply::all();
+
+    //     return view('admin.replies.index', compact('replies'));
+
+
+
+
+
+
+    // $user = Auth::user();
+
+    //     $reply = [
+    //         'comment_id' => $request->comment_id,
+    //         'photo_id' => $user->photo_id,
+    //         'author' => $user->name,
+    //         'email' => $user->email,
+    //         'body' => $request->body
+    //     ];
+
+    //     Reply::create($reply);
+
+    //     $request->session()->flash('comment_msg', 'You reply has been posted');
+
+    //     return redirect()->back();
+
+
+
+
+
+
+    //return view('admin.comment.replies.show', compact('comments', 'replies'));
 }

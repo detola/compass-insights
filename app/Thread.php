@@ -25,4 +25,9 @@ class Thread extends Model
         return $this->morphMany(ThreadComment::class, 'commentable');
     }
 
+    public function comments()
+    {
+        return $this->hasMany(ThreadComment::class, 'commentable_id');
+    }
+
 }

@@ -2,12 +2,12 @@
 
 @section('content')
 <!--Hero Section-->
-<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/banner10.jpg); background-position: center center; background-size: cover">
+<div class="full-row page-banner-image overlay-secondary" style="background-image: url(css/assets/images/background/bg001.jpg); background-position: center center; background-size: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="text-white text-center down-line-white">FAQ</h1>
-                <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">People freequenly ask question and get answer from our cool stuff. User can feel free to ask question and we answer asap.</span>
+                <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Got questions? See our FAQs for help.</span>
             </div>
         </div>
     </div>
@@ -77,17 +77,33 @@
                     <div class="panel">
                         <p>As humans, we tend to have blindspots that are visible to others and not to us, we find
                             that this happens to businesses as well. If you think you are doing everything right but
-                            not getting the level of impact you expect, you can book a <a href="{{ url('/shop/business-solutions')}}">Business Strategy Review</a> 
-                            session with us or purchase either one of our <a href="{{ url('/shop/launchpads')}}">Compass Essential</a>   or <a href="{{ url('/shop/launchpads')}}">Compass Premium</a>
+                            not getting the level of impact you expect, you can book a 
+                            <a href="{{ url('/shop/business-solutions')}}" class="text-pink">Business Strategy Review</a> 
+                            session with us or purchase either one of our 
+                            <a href="{{ url('/shop/launchpads')}}" class="text-pink">Compass Essential</a>   or 
+                            <a href="{{ url('/shop/launchpads')}}" class="text-pink">Compass Premium</a>
                             Launchpads, with which we can review your business, identify existing gaps and advise
                             on how you can deliver your products and services, for better results.</p>
-                        <p>Why should I opt for the <a href="{{ url('/shop/business-solutions')}}">Compass Solutions</a> instead of the <a href="{{ url('/shop/launchpads')}}">Compass Launchpads?</a></p>
+                        
+                    </div>
+                </div>
+                <div class="simple-collaps bg-gray px-4 py-3 border mb-3">
+                    <span class="accordion text-secondary d-block">Why should I opt for the 
+                        <a href="{{ url('/shop/business-solutions')}}" class="text-pink">Compass Solutions</a> instead of the 
+                        <a href="{{ url('/shop/launchpads')}}" class="text-pink">Compass Launchpads?</a></span>
+                    <div class="panel">
                         <p>The Compass Solution offerings are standalone, in depth business analysis and advisory
                             on particular areas of your business like Strategy, Customer Engagement, Customer
                             Relationship Management and Team Productivity. These solutions allow you to focus on
                             a particular problem that you have and fix it directly. We advise these for businesses that
                             have been in operation for a while and can identify their areas of weakness.</p>
-                        <p>Why should I opt for the <a href="{{ url('/shop/launchpads')}}">Compass Launchpads?</a> instead of the <a href="{{ url('/shop/business-solutions')}}">Compass Solutions</a></p>
+                    </div>
+                </div>
+                <div class="simple-collaps bg-gray px-4 py-3 border mb-3">
+                    <span class="accordion text-secondary d-block">Why should I opt for the 
+                        <a href="{{ url('/shop/launchpads')}}" class="text-pink">Compass Launchpads?</a> instead of the 
+                        <a href="{{ url('/shop/business-solutions')}}" class="text-pink">Compass Solutions</a></span>
+                    <div class="panel">
                         <p>The Compass Launchpads are designed to provide our solutions in a package so you
                             can get started on your customer engagement journey. This way, we are able to look at,
                             and link the different areas of your business, from your strategy, team strength
@@ -116,9 +132,9 @@
                     </div>
                 </div>
                 <div class="simple-collaps bg-gray px-4 py-3 border mb-3">
-                    <span class="accordion text-secondary d-block">I don&#39;t see any product or response there that caters to the need I have,</span>
+                    <span class="accordion text-secondary d-block">I don&#39;t see any product or response there that caters to the need I have.</span>
                     <div class="panel">
-                        <p>Please feel free to <a href="{{ url('/contact')}}">Contact Us.</a> to discuss your specific needs and we will take it from there.</p>
+                        <p>Please feel free to <a href="{{ url('/contact')}}" class="text-pink">Contact Us.</a> to discuss your specific needs and we will take it from there.</p>
                     </div>
                 </div>
             </div>
