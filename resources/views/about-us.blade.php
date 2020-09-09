@@ -44,50 +44,65 @@
 	</div>
 </div> --}}
 
-<div class="full-row pt-0" id="who-we-are">
+<div class="full-row bg-primary" id="who-we-are">
 	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-md-12">
+				<div class="text-secondary mb-5">
+					<span class="text-secondary pb-3 tagline">Customer Insights</span>
+					<h2 class="text-secondary mb-4">Who we are</h2>
+					<p>Compass Insights is a boutique business advisory and consulting outfit based in Nigeria, that
+						provides accessible data-driven insights for businesses to improve customer engagement and
+						satisfaction. Our services ensure that across industries, brands are able to convert customers to
+						loyal ambassadors, while optimizing resources spent on customer acquisition.</p>
+					<a href=" {{ url('/shop') }}"  class="btn btn-dark mt-3" style="">Our Products</a>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-12">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="simple-thumb text-secondary transation mb-5">
+							<i class="flaticon-sketch flat-medium text-secondary"></i>
+							{{-- <h5 class="my-3"><a href="#" class="text-secondary">Creative Design</a></h5> --}}
+							<p>At Compass Insights, we work with businesses to positively reform customer service and
+								sustainable business growth across West Africa.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="simple-thumb text-secondary transation mb-5">
+							<i class="flaticon-student flat-medium text-secondary"></i>
+							{{-- <h5 class="my-3"><a href="#" class="text-secondary">Corporate Template</a></h5> --}}
+							<p>Our business was born out of a desire to transform the quality of customer service delivery in
+								Nigeria - for us to do something tangible about the space and by extension, build stronger
+								businesses and organizations in Nigeria.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="simple-thumb text-secondary transation mb-5">
+							<i class="flaticon-conveyor flat-medium text-secondary"></i>
+							{{-- <h5 class="my-3"><a href="#" class="text-secondary">Easy Customize</a></h5> --}}
+							<p>Some of the challenges that lead to poor service delivery include instances where business
+								owners and leaders are actively involved in all facets of the business - from product
+								development to customer service. Our solutions come with an element of standardisation, so
+								that processes are established, employees are clear about what is expected of them, and
+								quality is guaranteed.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="simple-thumb text-secondary transation mb-5">
+							<i class="flaticon-import flat-medium text-secondary"></i>
+							{{-- <h5 class="my-3"><a href="#" class="text-secondary">Automatic Update</a></h5> --}}
+							<p>The benefits of standardization: Fundamentally, standardization means that your employees
+								have an established, time-tested process to use. When done well, standardization can decrease
+								ambiguity and guesswork, guarantee quality, boost productivity, and increase employee morale.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<div class="col-lg-12 col-md-12">
-	<div class="row">
-		<div class="col-lg-12 mb-5">
-			{{-- <span class="pb-2 d-table w-sm-100 text-primary h6">Capability</span> --}}
-			<h3 class="down-line w-sm-100 w-75 mb-4">Who we are</h3>
-			<span class="d-table sub-title">Compass Insights is a boutique business advisory and consulting outfit based in Nigeria, that
-				provides accessible data-driven insights for businesses to improve customer engagement and
-				satisfaction. Our services ensure that across industries, brands are able to convert customers to
-				loyal ambassadors, while optimizing resources spent on customer acquisition.</span>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-6 col-md-6 mb-3">
-			{{-- <h5 class="pb-3 d-table">Business Strengths</h5> --}}
-			<p>At Compass Insights, we work with businesses to positively reform customer service and
-			sustainable business growth across West Africa.</p>
-		</div>
-		<div class="col-lg-6 col-md-6 mb-3">
-			{{-- <h5 class="pb-3 d-table">Investment Opportunities</h5> --}}
-			<p>Our business was born out of a desire to transform the quality of customer service delivery in
-				Nigeria - for us to do something tangible about the space and by extension, build stronger
-				businesses and organizations in Nigeria.</p>
-		</div>
-		<div class="col-lg-6 col-md-6 mb-3">
-			{{-- <h5 class="pb-3 d-table">Company Weaknesses</h5> --}}
-			<p>Some of the challenges that lead to poor service delivery include instances where business
-				owners and leaders are actively involved in all facets of the business - from product
-				development to customer service. Our solutions come with an element of standardisation, so
-				that processes are established, employees are clear about what is expected of them, and
-				quality is guaranteed.</p>
-		</div>
-		<div class="col-lg-6 col-md-6 mb-3">
-			{{-- <h5 class="pb-3 d-table">Necessery Threats</h5> --}}
-			<p>The benefits of standardization: Fundamentally, standardization means that your employees
-				have an established, time-tested process to use. When done well, standardization can decrease
-				ambiguity and guesswork, guarantee quality, boost productivity, and increase employee morale.</p>
-		</div>
-	</div>
-</div>
-	</div>
-</div>
 
 <!--Out Team Section-->
 <div class="full-row bg-gray" id="our-team">
@@ -164,36 +179,43 @@
 						commissioned research pieces for human growth and sustainable development.</p>
 				</div>			
 			</div>
-
+		<br>
 		<div class="row">
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-12">
+				{{-- <span class="tagline text-primary m-auto text-center pb-2 d-table w-xs-100">Our Advisory Board</span> --}}
+				<h2 class="down-line m-auto text-center w-50 w-sm-100">The Advisory Board</h2>
+				{{-- <span class="text-center mt-4 mb-5 sub-title w-75 mx-auto">The Compass team is made up of active advisors, growth managers and analysts who are supported by an advisory board.</span> --}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-6">
 				<div class="thumb-team-classic mb-4">
 					<h5 class="mt-3"><a href="https://www.linkedin.com/in/bukola-obafunso-b44494177">Bukola Obafunsho</a></h5>
-					<span class="text-general">Advisory Board Member</span>
+					{{-- <span class="text-general">Advisory Board Member</span> --}}
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-2 col-md-6">
 				<div class="thumb-team-classic mb-4">
 					<h5 class="mt-3"><a href="http://linkedin.com/in/dayo-balogun-2b328b4a">Dayo Adeola</a></h5>
-					<span class="text-general">Advisory Board Member</span>
+					{{-- <span class="text-general">Advisory Board Member</span> --}}
 				</div>
 			</div>	
 			<div class="col-lg-3 col-md-6">
 				<div class="thumb-team-classic mb-4">
 					<h5 class="mt-3"><a href="https://www.linkedin.com/in/demilade-ademuson-ba631944/">Demilade Ademuson</a></h5>
-					<span class="text-general">Advisory Board Member</span>
+					{{-- <span class="text-general">Advisory Board Member</span> --}}
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-2 col-md-6">
 				<div class="thumb-team-classic mb-4">
 					<h5 class="mt-3"><a href="https://www.linkedin.com/in/dr-ponmile-osibo-7057152">Ponmile Osibo</a></h5>
-					<span class="text-general">Advisory Board Member</span>
+					{{-- <span class="text-general">Advisory Board Member</span> --}}
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-2 col-md-6">
 				<div class="thumb-team-classic mb-4">
 					<h5 class="mt-3"><a href="https://www.linkedin.com/in/chioma-viola-opara-35113517">Chioma Viola Opara</a></h5>
-					<span class="text-general">Advisory Board Member</span>
+					{{-- <span class="text-general">Advisory Board Member</span> --}}
 				</div>
 			</div>
 		</div>
@@ -210,7 +232,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="testimonial-simple text-center w-75 w-sm-100 mx-auto mt-5">
-						<div class="text-carusel owl-carousel owl-theme">
+						<div class="owl-carousel text-carusel">
 							<div class="item">
 								<i class="flaticon-text-quotes flat-medium text-primary"></i>
 								<p>From your findings and feedback, the foundation followed through with your

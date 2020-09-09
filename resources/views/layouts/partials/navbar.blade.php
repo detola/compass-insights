@@ -2,7 +2,7 @@
 <!-- Header Section Start -->
 {{-- <header class="transparent-header nav-on-banner"> --}}
 <header class="transparent-header bg-white nav-on-banner">
-	<div class="top-header bg-secondary sm-mx-none">
+	{{-- <div class="top-header bg-secondary sm-mx-none">
 		<div class="container">			
 			<div class="row">
 				<div class="col-lg-12 col-md-2 py-2">
@@ -10,7 +10,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<div class="navigation-header">
 		<div class="container">
 			<div class="row">

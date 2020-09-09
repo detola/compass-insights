@@ -184,12 +184,12 @@ a.hover-text-white:hover {
 	background-color: var(--theme-primary-color);
 }
 
-.hover-bg-primary:hover,
+.hover-bg-tertiary:hover,
 .down-line-tertiary::before{
 	background-color: var(--theme-tertiary-color);
 }
 
-.hover-bg-primary:hover,
+.hover-bg-pink:hover,
 .down-line-pink::before{
 	background-color: var(--theme-pink-color);
 }
@@ -1746,6 +1746,8 @@ table.cart td.actions {
 }
 .text-center.down-line-white::before,
 .text-center.down-line-secondary::before,
+.text-center.down-line-tertiary::before,
+.text-center.down-line-pink::before,
 .nav-tab-line li:after, .nav-tab-line a:after,
 .x-center, .text-center.down-line::before{
 	left: 50%;

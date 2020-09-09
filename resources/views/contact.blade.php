@@ -50,7 +50,7 @@
 								<span class="flaticon-group flat-mini text-general"></span>
 							</div>
 							<div class="col-lg-6 col-md-6 mb-2">
-								<input type="text" class="form-control bg-light pl-5" name="socialhandles" placeholder="Social Media Handle of the business" required="">
+								<input type="text" class="form-control bg-light pl-5" name="socialhandles" placeholder="Social Media of the business - e.g compassinsightsafrica/instagram" required="">
 								<span class="flaticon-email-1 flat-mini text-general"></span>
 							</div>
 							<div class="col-lg-6 col-md-6 mb-2">

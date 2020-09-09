@@ -39,6 +39,7 @@
 	var $window     			= $(window),
 		$header   				= $('header'),
 		$brand					= $('.partner-slider'),
+		$testimonial			= $('.testimonial-slider'),
 		$navigation   			= $('#navbarSupportedContent'),
 		$dropdown  				= $('.dropdown-toggle'),
 		$single_carusel			= $('.single-carusel'),
@@ -563,12 +564,42 @@
 	// Single Text Carusel
 	if ($single_carusel_text.length) {
 		$single_carusel_text.owlCarousel({
-			loop:false,
+			items:2,
+			loop:true,
 			margin:30,
 			nav:false,
-			dots: true,
+			dots: false,
+			smartSpeed: 1000,
+			autoplay: 4000,
+			autoplayTimeout:4000,
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			}
+		});    		
+	}
+
+	if ($testimonial.length) {
+		$testimonial.owlCarousel({
+			loop:true,
+			margin:30,
+			nav:false,
+			dots: false,
 			smartSpeed: 500,
-			autoplay: false,
+			autoplay: 4000,
 			responsive:{
 				0:{
 					items:1

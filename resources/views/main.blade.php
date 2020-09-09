@@ -12,7 +12,7 @@
 			
 			<p style="font-weight:400; text-align:center; width:700px; font-size:40px; line-height:70px; top:360px; left:50%; white-space:normal;" class="ls-l text-white ls-hide-phone higlight-font" data-ls="offsetyin:40; delayin:1500; easingin:easeOutQuint; filterin:blur(10px); offsetyout:-200; durationin:1500; durationout:400; parallax:false; parallaxlevel:3;">Compass Insights is committed to building stronger customer-centric organizations that are sustainable through time. </p>
 			
-			<p style="font-weight:400; text-align:center; width:500px; font-size:16px; line-height:50px; top:300px; left:50%; letter-spacing: 3px; white-space:normal;" class="ls-l text-white ls-hide-phone" data-ls="showinfo:1; offsetxin:-100lw; durationin:1500; delayin:500; transformoriginin:0% 50% 0; clipin:0 0 0 100%; filterin:blur(10px); offsetyout:-200; durationout:200;">Compass Insight</p>
+			<p style="font-weight:400; text-align:center; width:500px; font-size:16px; line-height:50px; top:300px; left:50%; letter-spacing: 3px; white-space:normal;" class="ls-l text-white ls-hide-phone" data-ls="showinfo:1; offsetxin:-100lw; durationin:1500; delayin:500; transformoriginin:0% 50% 0; clipin:0 0 0 100%; filterin:blur(10px); offsetyout:-200; durationout:200;">Compass Insights</p>
 			<!--<div style="font-size:15px; top:530px; left:50%;" class="ls-l ls-hide-phone" data-ls="offsetyin:40; delayin:2600; easingin:easeOutQuint; offsetyout:-300; durationin:1500; durationout:400; parallax:false; parallaxlevel:1;">
 				<div class="simple-video-play d-table ml-auto mt-3">
 					<a data-fancybox href="../../https://www.youtube.com/watch?v=0HnHUBeIBqU" class="rounded-circle"><i class="flaticon-play-button position-relative xy-center flat-mini rounded-circle text-white bg-primary"></i></a><span class="pl-3 text-white">Watch Our Intro</span>
@@ -104,9 +104,10 @@
 		<div class="col-lg-6 col-md-12">
 			<div class="text-secondary mb-5">
 				<span class="text-primary pb-3 tagline">Customer Insights</span>
-				<h2 class="text-primary mb-4">Working with you to build a customer focused business.</h2>
-				<p>Compass Insights is committed to building stronger customer-centric organizations that are
-					sustainable through time.</p>
+				<h2 class="text-primary mb-4">There are 4 ways to get started <span class="flaticon-arrow-pointing-to-right"></span> </h2>
+				{{-- <h2 class="text-primary mb-4">Working with you to build a customer focused business.</h2> --}}
+				{{-- <p>Compass Insights is committed to building stronger customer-centric organizations that are
+					sustainable through time.</p> --}}
 				{{-- <p>There are 3 ways to get started …. explore options below</p> --}}
 				{{-- <a href="#" class="btn btn-dark mt-3">About Company</a> --}}
 			</div>
@@ -137,20 +138,20 @@
 			  
 				<div class="text-white">
 	
-				  <a href="{{ url('/shop#boosters') }}" class="text-circle-top text-white" 
-				  data-toggle="tooltip" 
-				  title="Our customized boosters allow you to present a consistent face to your business and a high service quality level. We have 4 boosters that will save your time, standardize your processes, improve your service quality, increase your conversion rate and transform your customer experience. The boosters are customized to meet your business’ needs so no two boosters are the same.">Compass Business Boosters</a>
+				  <a href="{{ url('/shop#boosters') }}" class="text-circle-top text-white" data-toggle="popover" 
+				   title="Compass Boosters" 
+				  data-content="Our customized boosters allow you to present a consistent face to your business and a high service quality level. We have 4 boosters that will save your time, standardize your processes, improve your service quality, increase your conversion rate and transform your customer experience. The boosters are customized to meet your business’ needs so no two boosters are the same.">Boosters</a>
 				  <a href="{{ url('/shop#launchpads') }}" class="text-circle-right text-white"
-				  data-toggle="tooltip"
-				  title="Bring new life to your business. Get one of our launchpads specially designed to allow you to address your pressing business challenges. You can choose from our starter, essential or premium packages to sstreamline your activities and achieve more with what you have.">Compass Business Launchpads</a>
+				  data-toggle="popover" title="Compass Launchpads"
+				  data-content=""="Bring new life to your business. Get one of our launchpads specially designed to allow you to address your pressing business challenges. You can choose from our starter, essential or premium packages to sstreamline your activities and achieve more with what you have.">Launchpads</a>
 				<a href="{{ url('/thread') }}" class="text-circle-bottom text-white"
-				data-toggle="tooltip"
-				title="Get access to questions, answers and discussions business owners have, that highlight the business problems they face and the solutions implemented, when you join the Compass Network. To make the experience wholesome, you also get to ask your own questions and get engagement from other business owners.">
+				data-toggle="popover" title="Ask Compass"
+				data-content="Get access to questions, answers and discussions business owners have, that highlight the business problems they face and the solutions implemented, when you join the Compass Network. To make the experience wholesome, you also get to ask your own questions and get engagement from other business owners.">
 				Ask Compass</a>
 				<a href="{{ url('/shop#business-solutions') }}" class="text-circle-left text-white"
-				data-toggle="tooltip"
-				title="If you need clarity on your business and an advisor to identify opportunities and improve performance, then our affordable business solutions are for you. They are focused on equipping you with the tools to run your business effectively and have a built-in reflection period to ensure you get the most out of your time with us.">
-				Compass Business Solutionsw</a>
+				data-toggle="popover" title="Compass Business Solutions"
+				data-content="If you need clarity on your business and an advisor to identify opportunities and improve performance, then our affordable business solutions are for you. They are focused on equipping you with the tools to run your business effectively and have a built-in reflection period to ensure you get the most out of your time with us.">
+				Solutions</a>
 				</div>
 				
 			  </div>
@@ -182,7 +183,7 @@
 		</div>
 		<div class="bg-white p-5 mt-5">
 			<div class="row">
-				<div class="col-lg-4 col-md-12 simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm">
+				<div class="col-lg-4 col-md-12 simple-thumb transation bg-white shadow-sm">
 					{{-- <span class="h3 down-line text-primary mb-4 d-table">01</span> --}}
 					{{-- simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm mb-30 px-4 py-5 --}}
 					<h4 class="mb-3">How well is your team doing?</h4>
@@ -191,19 +192,19 @@
 						emerge.</p>
 						{{-- <a href="{{ url('/shop/business-solutions') }}" class="btn-link">Read More</a> --}}
 				</div>
-				<div class="col-lg-4 col-md-12 simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm">
+				<div class="col-lg-4 col-md-12 simple-thumb transation bg-white shadow-sm">
 					{{-- <span class="h3 down-line text-primary mb-4 d-table">02</span> --}}
 					<h4 class="mb-3">How well do you know your major clients/customers?</h4>
 					<p>Do you know their purchasing power?
-						Who is your target audience? <a href="{{ url('/shop#business-solutions') }}">See</a> how to position your offer optimally and engage better
+						Who is your target audience? <a href="{{ url('/shop#business-solutions') }}">See how to</a> position your offer optimally and engage better
 						with them</p>
 						{{-- <a href="{{ url('/shop/business-solutions') }}" class="btn-link">Read More</a> --}}
 				</div>
-				<div class="col-lg-4 col-md-12 simple-thumb hover-bg-primary hover-text-white transation bg-white shadow-sm">
+				<div class="col-lg-4 col-md-12 simple-thumb transation bg-white shadow-sm">
 					{{-- <span class="h3 down-line text-primary mb-4 d-table">03</span> --}}
 					<h4 class="mb-3">Experience is the best teacher</h4>
 					<p>Experience is the best teacher but experiences do not have to happen to you before you learn
-						from them. Check out our <a href="{{ url('/blog') }}">insights</a> and see customer
+						from them. <a href="{{ url('/blog') }}">Check out our insights</a> and see customer
 						engagement issues businesses are facing and how they are getting through them.</p>
 						{{-- <a href="{{ url('/blog') }}" class="btn-link">Read More</a> --}}
 				</div>
@@ -405,30 +406,68 @@
 </div> --}}
 
 
-<div class="full-row bg-dark">
+<div class="full-row bg-dark" style="background-image: url(css/assets/images/background/bg-12.png); background-position: center center; background-repeat: no-repeat">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-12">
+			{{-- <div class="col-lg-6 col-md-12">
 				<h3 class="mb-5 text-white">Subscribe For Our Newsletter</h3>
 				<div class="row">
 					<h6 class="mb-sm-30 text-white">Want to increase your customer base or y
 						our customer retention rate? Let Compass show you how. Sign up to join our network</h6>
 				</div>
-			</div>
-			<div class="col-lg-6 col-md-12">
-				<div class="sign-up-box bg-white py-5 px-4 text-center">
+			</div> --}}
+			<div class="col-lg-12 col-md-12">
+				<div class="bg-white py-5 px-4 text-center">
 					<h4 class="text-center mb-4">Sign up to join our network</h4>
-					<p>Lacinia laoreet senectus fames tortor nisi. Rhoncus semper nostra.</p>
+					<p>Want to increase your customer base or your customer retention rate? Let Compass show you how.</p>
+					<div class="form-icon-left mt-5">
 					<form action="#" method="post">
-						<input type="text" name="name" class="form-control bg-light mb-3" placeholder="Name" />
-						<input type="email" name="industry" class="form-control bg-light mb-3" placeholder="Industry" />
-						<input type="email" name="email" class="form-control bg-light mb-3" placeholder="Email Address" />
-						<button type="button" class="btn btn-primary w-100 mb-3">Subscribe Now</button>
+						<div class="row">
+							<div class="col-lg-3 col-md-6 mb-2">
+								<input type="text" name="name" class="form-control bg-light mb-3" placeholder="Name" />
+							</div>
+							<div class="col-lg-3 col-md-6 mb-2">
+								<input type="text" name="industry" class="form-control bg-light mb-3" placeholder="Industry" />
+							</div>
+							<div class="col-lg-3 col-md-6 mb-2">
+								<input type="email" name="email" class="form-control bg-light mb-3" placeholder="Email Address" />
+							</div>
+							<div class="col-lg-3 col-md-6 mb-2">
+								<button type="button" class="btn btn-primary w-100 mb-3">Subscribe Now</button>
+							</div>
+							
+						</div>
+						
 					</form>
 					{{-- <span>Lorem semper netus praesent senectus vivamus dapibus nostra.</span> --}}
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+{{-- <div id="ouibounce-modal">
+	<div class="underlay"></div>
+	<div class="modal">
+	  <div class="modal-title">
+		<h3>This is a OuiBounce modal!</h3>
+	  </div>
+
+	  <div class="modal-body">
+		<p>A doge is an elected chief of state lordship, the ruler of the Republic in many of the Italian city states during the medieval and renaissance periods, in the Italian "crowned republics".</p>
+		<p>The word is from a Venetian word that descends from the Latin dux (as do the English duke and the standard Italian duce and duca), meaning "leader", especially in a military context. The wife of a doge is styled a dogaressa. <a href="https://en.wikipedia.org/wiki/Doge" target="blank">[1]</a></p>
+
+		<form>
+		  <input type="text" placeholder="you@email.com">
+		  <input type="submit" value="learn more &raquo;">
+		  <p class="form-notice">*this is a fake form</p>
+		</form>
+	  </div>
+
+	  <div class="modal-footer">
+		<p>no thanks</p>
+	  </div>
+	</div>
+  </div> --}}
 @endsection

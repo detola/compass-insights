@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12">
-				<h2 class="down-line mb-2">{{$thread->subject}}</h2>
+				<h4 class="down-line mb-2">{{$thread->subject}}</h4>
 				<p> 
                     {!!$thread->thread!!}
                 </p>
@@ -52,9 +52,16 @@
                                 <label>Reply</label>
                                 <textarea class="form-control bg-gray" name="body" placeholder="Create a reply" rows="mt-3" required></textarea>
                             </div> 
+                            @guest
+                            <div class="col-md-12">
+                                <a href=" {{ url('/login') }} " class="btn btn-primary">Login to Create a Reply</a>
+                                <a href=" {{ url('/register') }} " class="btn btn-dark">Register to Create a Reply</a>
+                            </div>
+                            @else
                             <div class="col-md-12">
 								<button class="btn btn-primary" name="submit" type="submit">Reply</button>
 							</div>
+                            @endguest
                         </div>
                     </form>
                 </div>

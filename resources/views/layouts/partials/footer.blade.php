@@ -55,6 +55,8 @@
 </footer>
 <!-- Footer Section End -->
 
+
+
 <!-- Copyright Section Start -->
 <div class="copyright bg-dark text-default py-3">
 	<div class="container">
@@ -92,20 +94,31 @@
 <script src="{{asset('css/assets/js/wow.js')}}"></script>
 <script src="{{asset('css/assets/js/mixitup.min.js')}}"></script>
 <script src="{{asset('css/assets/js/custom.js')}}"></script> 
+<script src="{{asset('css/assets/js/ouibounce.js')}}"></script> 
+
 
 <!-- Scripts -->
 <script src="{{ asset('js/new.js') }}"></script>
 
 <!-- use for map style --> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script>
-<script src="css/assets/js/map.scripts.js"></script>
-<script>
+{{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script> --}}
+{{-- <script src="css/assets/js/map.scripts.js"></script> --}}
+{{-- <script>
 (function($){	
 	var _latitude = 6.484507 //36.596165;
 	var _longitude = 3.356351 //-97.062988;
 	init(_latitude, _longitude);
 })(jQuery);
-</script>
+</script> --}}
+
+<script>
+	$(document).ready(function(){
+		$('[data-toggle="popover"]').popover({
+			placement : 'top',
+			trigger : 'hover'
+		});
+	});
+	</script>
 
 <script>
 
@@ -154,6 +167,28 @@ $(document).ready(function() {
 // });
 
 </script>
+
+<script>
+	// if you want to use the 'fire' or 'disable' fn,
+	// you need to save OuiBounce to an object
+	var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+	  aggressive: true,
+	  timer: 0,
+	  callback: function() { console.log('ouibounce fired!'); }
+	});
+	
+	$('body').on('click', function() {
+	  $('#ouibounce-modal').hide();
+	});
+	
+	$('#ouibounce-modal .modal-footer').on('click', function() {
+	  $('#ouibounce-modal').hide();
+	});
+	
+	$('#ouibounce-modal .modal').on('click', function(e) {
+	  e.stopPropagation();
+	});
+	</script>
 
 </body>
 </html>

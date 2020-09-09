@@ -119,8 +119,8 @@
                             Issues or concerns some of your customers have will be replicated across board. With
                             the insights from a sample of your customers, you can tailor your processes to offer
                             better to all your customers. If you would like a more extensive review of your
-                            customers, then our <a href="{{ url('/shop/business-solutions')}}">Market Research</a> 
-                            product will be just perfect for you so <a href="{{ url('/contact')}}">Contact Us.</a></p>
+                            customers, then our <a href="{{ url('/shop/business-solutions')}}" class="text-pink">Market Research</a> 
+                            product will be just perfect for you so <a href="{{ url('/contact')}}" class="text-pink">Contact Us.</a></p>
                     </div>
                 </div>
                 <div class="simple-collaps bg-gray px-4 py-3 border mb-3">
