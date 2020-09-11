@@ -6,14 +6,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">Our Products</h1>
-                {{-- <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Product Page, feel free to choose from the variety of product that's we've itemised for you</span> --}}
+                <h1 class="text-white text-center down-line-white mt-5">Our Products</h1>
             </div>
         </div>
     </div>
 </div>
-
-
 <div class="full-row" id="boosters">
 	<div class="container">
 		<div class="row">
@@ -31,51 +28,57 @@
 							guesswork in your processes, ensure that your team knows exactly what to do per time and that
 							all customers have a consistent pleasant experience. They are easy to use, so you can
 							effectively delegate implementation to the responsible staff. This will give you more to focus on
-							product development that grows your client base.</p> 
-					<p class="text-dark"><b>Even if you are working solo or
-						as a freelancer, your customers do not need to know that. Our boosters will help you deliver
-						consistent service, address any queries or issues and set a great standard for your business.</b></p>
+							product development that grows your client base.
+						</p> 
+						<p class="text-dark"><b>Even if you are working solo or
+							as a freelancer, your customers do not need to know that. Our boosters will help you deliver
+							consistent service, address any queries or issues and set a great standard for your business.</b>
+						</p>
 				</div>
-				<!--<div class="mx-auto d-table wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-					<img src="assets/images/background/bg-13.png" alt="corporate template">
-				</div>-->
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-4" >
-					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
+				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-4">
+					<span class="float-left d-table mt-2">
+						<i class="flaticon-power flat-medium text-primary"></i>
+					</span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 1</span>
 						<h5 class="text-dark mb-3 text-uppercase">First Impression Matters: <b><i>Make a great first impression 
-							and increase conversion rates</i></b></h5>
-						<p>No better time to make a good impression than the first encounter with your business –
+							and increase conversion rates</i></b>
+						</h5>
+						<p>
+							No better time to make a good impression than the first encounter with your business –
 							from WhatsApp to calls, social media to emails, we ensure that a potential client’s first
-							interaction with you is unforgettable for the right reasons.</p>
-							<p> 
+							interaction with you is unforgettable for the right reasons.
+						</p>
+						<p>
 							This booster ensures that you put your best foot forward and convey the quality and 
 							value you provide to potential customers. A positive first impression is more likely to 
 							yield to a sale. It also converts the potential customer to an ambassador even if they 
-							don’t make an initial purchase.</p>
-							<del class="text-dark text-uppercase">NGN 25,000</del>
-							
-								<form action="{{route('cart.store')}}" method="post">
-									{{ csrf_field() }}
-									<input type="hidden" name="id" value="1">
-									<input type="hidden" name="name" value="Booster 1">
-									<input type="hidden" name="details" value="First Impression Matters : 
-									Make a great first impression and increase conversion rates">
-									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
-								</form>
+							don’t make an initial purchase.
+						</p>
+						<del class="text-dark text-uppercase">NGN 30,000</del>						
+						<form action="{{route('cart.store')}}" method="post">
+							{{ csrf_field() }}
+							<input type="hidden" name="id" value="1">
+							<input type="hidden" name="name" value="Booster 1">
+							<input type="hidden" name="details" value="First Impression Matters : 
+								Make a great first impression and increase conversion rates">
+							<input type="hidden" name="price" value="25000">
+							<button type="submit" class="btn btn-dark mt-3">Boost your business now for N25,000 launch price</button>
+						</form>
 					</div>
 				</div>
+
 				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-4" style="border:1px solid #fff;">
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 2</span>
 						<h5 class="text-dark mb-3 text-uppercase">Order Management: <b><i>Set a gold standard for your business, be known for your seamless
-							order processes</i></b></h5>
+							order processes</i></b>
+						</h5>
 						<p>You have made a good first impression, and secured a sale - great! But how seamless is
 							your order process, from when the order is received to fulfilment?
 							Set a gold standard for your business and have a no-hiccup, no-excuses order
@@ -85,7 +88,7 @@
 							The Order Management booster ensures that your customers have a seamless order
 							process, consistently providing reassurance to your customer and ensuring referrals as
 							well as repeat orders.</p>
-							<del class="text-dark text-uppercase">NGN 25,000</del>
+							<del class="text-dark text-uppercase">NGN 30,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -93,12 +96,12 @@
 									<input type="hidden" name="name" value="Booster 2">
 									<input type="hidden" name="details" value="Order Management: Set a gold 
 									standard for your business, be known for your seamless order processes">
-									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
+									<input type="hidden" name="price" value="25000">
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N25,000 launch price</button>
 								</form>
 					</div>
 				</div>
-				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-	" style="border:1px solid #fff;">
+				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-4" style="border:1px solid #fff;">
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 3</span>
@@ -112,19 +115,19 @@
 							The delivery experience can make or break the order success. Provide upfront
 							information about what happens to unwanted products/services. Ensure your customer
 							delivery experience is a positive one, all the time.</p>
-							<del class="text-dark text-uppercase">NGN 25,000</del>
+							<del class="text-dark text-uppercase">NGN 30,000</del>
 							
-								<form action="{{route('cart.store')}}" method="post">
-									{{ csrf_field() }}
-									<input type="hidden" name="id" value="3">
-									<input type="hidden" name="name" value="Booster 3">
-									<input type="hidden" name="details" value="The Delivery Experience Revamp: Be outstanding">
-									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
-								</form>
+							<form action="{{route('cart.store')}}" method="post">
+								{{ csrf_field() }}
+								<input type="hidden" name="id" value="3">
+								<input type="hidden" name="name" value="Booster 3">
+								<input type="hidden" name="details" value="The Delivery Experience Revamp: Be outstanding">
+								<input type="hidden" name="price" value="25000">
+								<button type="submit" class="btn btn-dark mt-3">Boost your business now for N25,000 launch price</button>
+							</form>
 					</div>
 				</div>
-				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-4">
+				<div class="bg-light transation w-50 w-sm-100 d-flex float-left p-4" style="border:1px solid #fff;">
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
 					<div class="pl-3">
 						<span class="text-primary d-table tagline">Booster 4</span>
@@ -141,7 +144,7 @@
 							Get the Troubleshooting for Success booster and resolve issues, respond to queries and
 							complaints and receive feedback graciously. Who knows, you might get a loyal
 							customer through this.</p>
-							<del class="text-dark text-uppercase">NGN 25,000</del>
+							<del class="text-dark text-uppercase">NGN 30,000</del>
 							
 								<form action="{{route('cart.store')}}" method="post">
 									{{ csrf_field() }}
@@ -149,30 +152,11 @@
 									<input type="hidden" name="name" value="Booster 4">
 									<input type="hidden" name="details" value="Troubleshooting for Success: 
 									Be prepared to address queries, complaints and feedback">
-									<input type="hidden" name="price" value="20000">
-									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N20,000 launch price</button>
+									<input type="hidden" name="price" value="25000">
+									<button type="submit" class="btn btn-dark mt-3">Boost your business now for N25,000 launch price</button>
 								</form>
 					</div>
 				</div>
-				{{-- <div class="feature-thumb-border hover-text-white bg-light transation w-50 w-sm-100 d-flex float-left p-4">
-					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-primary"></i></span>
-					<div class="pl-3">
-						<span class="text-primary d-table tagline">Booster Bundle</span>
-						<h5 class="text-dark mb-3 text-uppercase">Get All 4 Boosters</h5>
-						<p>For a complete experience, get all boosters as a bundle and make significant savings</p>
-							<del class="text-dark text-uppercase">NGN 100,000</del>
-							
-								<form action="{{route('cart.store')}}" method="post">
-									{{ csrf_field() }}
-									<input type="hidden" name="id" value="5">
-									<input type="hidden" name="name" value="Booster Pack">
-									<input type="hidden" name="details" value="Get All 4 Bossters">
-									<input type="hidden" name="price" value="50000">
-									<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N50,000 launch price</button>
-								</form>
-					</div>
-				</div> --}}
-
 				<div class="feature-thumb-border hover-text-white bg-primary transation w-50 w-sm-100 d-flex float-left p-4">
 					<span class="float-left d-table mt-2"><i class="flaticon-power flat-medium text-dark"></i></span>
 					<div class="pl-3">
@@ -181,14 +165,14 @@
 						<p class="text-white"><b>For a complete experience, get all boosters as a bundle and make significant savings</b></p>
 							<del class="text-dark text-uppercase"><b>NGN 100,000</b></del>
 							
-								<form action="{{route('cart.store')}}" method="post">
-									{{ csrf_field() }}
-									<input type="hidden" name="id" value="5">
-									<input type="hidden" name="name" value="Booster Bundle">
-									<input type="hidden" name="details" value="Get All 4 Boosters">
-									<input type="hidden" name="price" value="50000">
-									<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N50,000 launch price</button>
-								</form>
+							<form action="{{route('cart.store')}}" method="post">
+								{{ csrf_field() }}
+								<input type="hidden" name="id" value="5">
+								<input type="hidden" name="name" value="Booster Bundle">
+								<input type="hidden" name="details" value="Get All 4 Boosters">
+								<input type="hidden" name="price" value="50000">
+								<button type="submit" class="btn btn-dark mt-3">Get a total Boost for N60,000 launch price</button>
+							</form>
 					</div>
 				</div>
 			</div>
@@ -204,7 +188,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mb-5">
-				<h2 class="main-title down-line-secondary w-50 m-auto text-center w-sm-100">Compass Business Launchpads</h2>
+				<h2 class="main-title down-line-tertiary w-50 m-auto text-center w-sm-100">Compass Business Launchpads</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -220,9 +204,6 @@
 						Select one of three affordable launchpads
 					</p>
 				</div>
-				<!--<div class="mx-auto d-table wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-					<img src="assets/images/background/bg-13.png" alt="corporate template">
-				</div>-->
 			</div>
 		</div>
 	</div>
@@ -232,7 +213,7 @@
 
 <!-- Case Study Section Start -->
 
-<div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="full-row">
 <div class="container">
 	<div class="row">
 		<div class="col-lg-6 col-md-12">
@@ -260,11 +241,39 @@
 						</form>
 					{{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN35,000 only</a> --}}
 		</div>
+		<div class="col-lg-5 col-md-5 offset-lg-1">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 border-right border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-conveyor flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Basic Business Review</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-chat-1 flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Customised Feedback (15 Customers)</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-right">
+					<div class="px-4 py-5">
+						<span class="flaticon-online-marketing flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Strategic Insights</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="px-4 py-5">
+						<span class="flaticon-rocket flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">CES Implementation Plan</h5>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </div>
 
-<div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="full-row">
 <div class="container">
 	<div class="row">
 		<div class="col-lg-6 col-md-12">
@@ -295,11 +304,45 @@
 					</form>
 					{{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN75,000 only</a> --}}
 		</div>
+		<div class="col-lg-5 col-md-5 offset-lg-1">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 border-right border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-conveyor flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Business Strategy Review</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-chat-1 flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Detailed Feedback (25 Customers)</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-right border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-group-1 flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Team Assessment</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-online-marketing flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Strategic Insights</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-right">
+					<div class="px-4 py-5">
+						<span class="flaticon-rocket flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">CES Implementation Plan</h5>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </div>
 
-<div class="full-row" style="background-image: url(../css/assets/images/background/bg-10.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+<div class="full-row">
 <div class="container">
 	<div class="row">
 		<div class="col-lg-6 col-md-12">
@@ -333,6 +376,40 @@
 					</form>
 					{{-- <a href="#" class="btn btn-primary mt-4 d-table">Get all of these for NGN250,000 only</a> --}}
 		</div>
+		<div class="col-lg-5 col-md-5 offset-lg-1">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 border-right border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-conveyor flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Business Strategy Review</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-chat-1 flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Detailed Feedback (40 Customers)</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-right border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-group-1 flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Team Assessment</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-bottom">
+					<div class="px-4 py-5">
+						<span class="flaticon-online-marketing flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">Strategic Insights</h5>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 border-right">
+					<div class="px-4 py-5">
+						<span class="flaticon-rocket flat-medium text-tertiary d-table mb-3"></span>
+						<h5 class="text-secondary">CES Implementation Plan</h5>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </div>
@@ -358,9 +435,6 @@
 						your time with us.
 					</p>
 				</div>
-				<!--<div class="mx-auto d-table wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
-					<img src="assets/images/background/bg-13.png" alt="corporate template">
-				</div>-->
 			</div>
 		</div>
 	</div>
@@ -386,13 +460,8 @@
 							</ul>
 					<a href="{{ url('/contact') }}" class="btn-link text-dark">If you do not have a business strategy plan for us to work with yet, we can work with you to
 						create a winning business plan. (Contact Us)</a>
-					{{-- <div class="post-admin mt-4">
-						<ul>
-							<li><span>Post On:</span> 12th March 2019</li>
-							<li><span>Story By:</span> Jason Holder</li>
-						</ul>
-					</div> --}}
-				<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 100,000</a>
+					
+					<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 100,000</a>
 				</div>
 			</div>
 		</div>
@@ -435,7 +504,7 @@
 							touchpoints.</li>
 					</ul>
 					
-				<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 200,000</a>
+					<a href="{{ url('/contact') }}" class="btn btn-pink mt-4 d-table">From NGN 200,000</a>
 
 				</div>
 			</div>

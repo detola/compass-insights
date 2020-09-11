@@ -6,7 +6,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="text-white down-line-white">Compass Insights</h1>
+					<h1 class="text-white down-line-white mt-5">Compass Insights</h1>
 					<span class="text-white mt-4 sub-title w-50 w-sm-100">Our trove of insights for your business growth.</span>
 				</div>
 			</div>

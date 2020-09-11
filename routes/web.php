@@ -39,18 +39,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-// Route::get('/products', function () {
-//     return view('products');
-// });
-
-/*Route::get('/blog', function () {
-    return view('blog.index');
-});*/
-
-/*Route::get('/blog/single', function () {
-    return view('blog.single');
-});*/
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -107,6 +95,18 @@ Route::get('thread/{id}/edit', 'ThreadController@editThread')->name('thread.edit
 Route::patch('thread/{id}/edit', 'ThreadController@updateThread')->name('thread.update');
 Route::get('thread/{id}/show', 'ThreadController@show')->name('thread.show');
 
+Route::get('/news', 'NewsletterContactscontroller@index')->name('news.index');
+Route::post('/news', 'NewsletterContactsController@store')->name('news.store');
+Route::get('news/{id}/destroy', 'NewsletterContactsController@destroy')->name('news.destroy');
+
+Route::get('/tell', 'TellCompassController@index')->name('tell.index');
+Route::post('/tell', 'TellCompassController@store')->name('tell.store');
+Route::get('/tell/{id}/show', 'TellCompassController@destroy')->name('tell.destroy');
+
+Route::get('/message', 'MessageController@index')->name('message.index');
+Route::post('/contact', 'MessageController@store')->name('message.store');
+Route::get('/message/{id}/show', 'MessageController@destroy')->name('message.destroy');
+
 //Route::resource('/thread', 'ThreadController');
 
 //Product Category Routes
@@ -117,6 +117,7 @@ Route::get('thread/{id}/show', 'ThreadController@show')->name('thread.show');
 // Route::patch('admin/productcategory/{id}/edit', 'ProductCategoryController@update')->name('admin.productcategory.update');
 // Route::delete('/admin/productcategory/{id}', 'ProductCategoryController@destroy')->name('admin.productcategory.destroy');
 
+// Admin Product
 Route::get('admin/products', 'ProductController@index')->name('admin.products.index');
 Route::get('admin/products/create', 'ProductController@create')->name('admin.products.create');
 Route::post('admin/products/create', 'ProductController@store')->name('admin.products.store');
@@ -125,15 +126,14 @@ Route::patch('admin/products/{id}/edit', 'ProductController@update')->name('admi
 Route::delete('/admin/products/{id}', 'ProductController@destroy')->name('admin.products.destroy');
 
 
-//Route::get('/product', 'ProductController@index')->name('product.index');
 Route::get('/products', 'ProductController@products')->name('products.index');
 Route::get('/product', 'ProductController@products')->name('products.show');
 
+// Front End Shop
 Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop#boosters', 'ShopController@businessboosters')->name('shop.boosters');
 Route::get('/shop#launchpads', 'ShopController@businesslaunchpads')->name('shop.launchpads');
 Route::get('/shop#business-solutions', 'ShopController@businesssolutions')->name('shop.business-solutions');
-//Route::get('/shop/{id}', 'ShopController@show')->name('shop.show');
 
 
 Route::resource('/admin/postcategory', 'CategoryController');

@@ -568,7 +568,7 @@
 			loop:true,
 			margin:30,
 			nav:false,
-			dots: false,
+			dots: true,
 			smartSpeed: 1000,
 			autoplay: 4000,
 			autoplayTimeout:4000,

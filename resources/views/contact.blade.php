@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">We want to hear from you</h1>
+                <h1 class="text-white text-center down-line-white mt-5">We want to hear from you</h1>
                 {{-- <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">People freequenly ask question and get answer from our cool stuff. User can feel free to ask question and we answer asap.</span> --}}
             </div>
         </div>
@@ -26,7 +26,8 @@
 					Your reviews are 100% anonymous and only used to improve customer experiences for the brands you engage with.
 				</p>
 				<div class="form-icon-left mt-5">
-					<form action="#" method="POST">
+					<form action=" {{route('tell.store')}} " method="POST">
+						@csrf
 						<div class="row">
 							<!--<div class="col-lg-6 col-md-6 mb-2">
 								<select class="form-control bg-light pl-5">
@@ -46,16 +47,12 @@
 								<span class="flaticon-email flat-mini text-general"></span>
 							</div>
 							<div class="col-lg-6 col-md-6 mb-2">
-								<input type="text" class="form-control bg-light pl-5" name="company" placeholder="Name of the Business/Brand" required>
+								<input type="text" class="form-control bg-light pl-5" name="brand" placeholder="Name of the Business/Brand" required>
 								<span class="flaticon-group flat-mini text-general"></span>
 							</div>
 							<div class="col-lg-6 col-md-6 mb-2">
-								<input type="text" class="form-control bg-light pl-5" name="socialhandles" placeholder="Social Media of the business - e.g compassinsightsafrica/instagram" required="">
+								<input type="text" class="form-control bg-light pl-5" name="socialmedia" placeholder="Social Media of the business - e.g compassinsightsafrica/instagram" required="">
 								<span class="flaticon-email-1 flat-mini text-general"></span>
-							</div>
-							<div class="col-lg-6 col-md-6 mb-2">
-								<input type="text" class="form-control bg-light pl-5" name="platform" placeholder="Platform">
-								<span class="flaticon-email flat-mini text-general"></span>
 							</div>
 							<div class="col-lg-12 col-md-12 mb-2">
 								<input type="text" class="form-control bg-light pl-5" name="message" placeholder="Message" required>
@@ -79,23 +76,24 @@
 	
 				<h2 class="down-line-pink mb-5">Send Message</h2>
 				<div class="form-simple mb-5">
-					<form id="contact-form" action="#" method="post">
+				<form id="contact-form" action="{{route('message.store')}}" method="post">
+					@csrf
 						<div class="form-row">
 							<div class="col-md-6">
 								<label>Full Name:</label>
-								<input type="text" class="form-control bg-gray" name="name" required="">
+								<input type="text" class="form-control bg-gray" name="name" required>
 							</div>
 							<div class="col-md-6">
 								<label>Your Email:</label>
-								<input type="email" class="form-control bg-gray" name="email" required="">
+								<input type="email" class="form-control bg-gray" name="email" required>
 							</div>
 							<div class="col-md-12">
 								<label>Subject:</label>
-								<input type="text" class="form-control bg-gray" name="subject" required="">
+								<input type="text" class="form-control bg-gray" name="subject" required>
 							</div>
 							<div class="col-md-12">
 								<label>Message:</label>
-								<textarea class="form-control bg-gray" name="message" rows="8" required=""></textarea>
+								<textarea class="form-control bg-gray" name="message" rows="8" required></textarea>
 							</div>
 							<div class="col-md-12">
 								<button class="btn btn-pink" name="submit" type="submit">Send Message</button>

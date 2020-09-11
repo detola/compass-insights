@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">FAQ</h1>
+                <h1 class="text-white text-center down-line-white mt-5">FAQ</h1>
                 <span class="text-white text-center mt-4 sub-title w-50 w-sm-100 mx-auto">Got questions? See our FAQs for help.</span>
             </div>
         </div>

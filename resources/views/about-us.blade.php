@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-white text-center down-line-white">About Us</h1>
+                <h1 class="text-white text-center down-line-white mt-5">About Us</h1>
             </div>
         </div>
     </div>
